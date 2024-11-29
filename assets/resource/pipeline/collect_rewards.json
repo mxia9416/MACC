@@ -1,0 +1,331 @@
+{
+    "friend_points": {
+        "next": [
+            "maintenance_center"
+        ],
+        "interrupt": [
+            "home_button",
+            "back_button"
+        ]
+    },
+    "guild": {
+        "next": [
+            "maintenance_center2"
+        ],
+        "interrupt": [
+            "home_button",
+            "back_button"
+        ]
+    },
+    "supervision": {
+        "next": [
+            "maintenance_center3"
+        ],
+        "interrupt": [
+            "home_button",
+            "back_button"
+        ]
+    },
+    "back_button": {
+        "recognition": "TemplateMatch",
+        "template": "返回__23_16_46_50__0_0_119_116.png",
+        "roi": [
+            9,
+            7.5,
+            308,
+            84
+        ],
+        "action": "Click",
+        "next": [],
+        "post_wait_freezes": 50
+    },
+    "home_button": {
+        "recognition": "TemplateMatch",
+        "template": "主页__141_21_41_42__91_0_141_113.png",
+        "roi": [
+            9,
+            7.5,
+            308,
+            84
+        ],
+        "action": "Click",
+        "next": [],
+        "post_wait_freezes": 50
+    },
+    "maintenance_center": {
+        "recognition": "TemplateMatch",
+        "template": "整备中心__1023_636_86_46__973_586_186_134.png",
+        "roi": [
+            858,
+            523.5,
+            422,
+            196.5
+        ],
+        "action": "Click",
+        "next": [
+            "friend_tab"
+        ],
+        "post_wait_freezes": 50
+    },
+    "friend_tab": {
+        "recognition": "OCR",
+        "expected": "好友",
+        "roi": [
+            1048,
+            214.5,
+            232,
+            210
+        ],
+        "action": "Click",
+        "next": [
+            "collect_friend_rewards",
+            "send_friend_rewards",
+            "home_button",
+            "back_button"
+        ],
+        "interrupt": [],
+        "post_wait_freezes": 50
+    },
+    "collect_friend_rewards": {
+        "recognition": "OCR",
+        "expected": "一键领取",
+        "roi": [
+            797,
+            446.5,
+            483,
+            273.5
+        ],
+        "action": "Click",
+        "next": [
+            "send_friend_rewards",
+            "home_button",
+            "back_button"
+        ],
+        "post_wait_freezes": 50
+    },
+    "send_friend_rewards": {
+        "recognition": "OCR",
+        "expected": "键赠送",
+        "roi": [
+            831,
+            514.5,
+            449,
+            205.5
+        ],
+        "action": "Click",
+        "next": [
+            "home_button",
+            "back_button"
+        ],
+        "post_wait_freezes": 50
+    },
+    "maintenance_center2": {
+        "recognition": "TemplateMatch",
+        "template": "整备中心__1023_636_86_46__973_586_186_134.png",
+        "roi": [
+            858,
+            523.5,
+            422,
+            196.5
+        ],
+        "action": "Click",
+        "next": [
+            "guild_tab"
+        ],
+        "post_wait_freezes": 50
+    },
+    "guild_tab": {
+        "recognition": "OCR",
+        "expected": "秘盟",
+        "roi": [
+            947,
+            124.5,
+            327,
+            273
+        ],
+        "action": "Click",
+        "next": [
+            "donate_tab"
+        ],
+        "interrupt": [
+            "click_on_side"
+        ],
+        "post_wait_freezes": 50
+    },
+    "donate_tab": {
+        "recognition": "OCR",
+        "expected": "捐赠",
+        "roi": [
+            810,
+            505.5,
+            224,
+            214.5
+        ],
+        "action": "Click",
+        "next": [
+            "donate"
+        ],
+        "post_wait_freezes": 50
+    },
+    "donate": {
+        "recognition": "OCR",
+        "expected": "全部捐赠",
+        "roi": [
+            82,
+            438.5,
+            369,
+            267
+        ],
+        "action": "Click",
+        "next": [
+            "home_button",
+            "back_button"
+        ],
+        "interrupt": [
+            "click_on_side"
+        ],
+        "post_wait_freezes": 50
+    },
+    "click_on_side": {
+        "action": "Click",
+        "target": [
+            1183,
+            372.5,
+            92,
+            95
+        ],
+        "post_wait_freezes": 50
+    },
+    "maintenance_center3": {
+        "recognition": "TemplateMatch",
+        "template": "整备中心__1023_636_86_46__973_586_186_134.png",
+        "roi": [
+            858,
+            523.5,
+            422,
+            196.5
+        ],
+        "action": "Click",
+        "next": [
+            "supervision_tab"
+        ],
+        "post_wait_freezes": 50
+    },
+    "supervision_tab": {
+        "recognition": "OCR",
+        "expected": "监管",
+        "roi": [
+            948,
+            172.5,
+            321,
+            374
+        ],
+        "action": "Click",
+        "next": [
+            "collect_supervision_rewards",
+            "supervision_terminal",
+            "home_button",
+            "back_button"
+        ],
+        "interrupt": [],
+        "post_wait_freezes": 50
+    },
+    "collect_supervision_rewards": {
+        "recognition": "OCR",
+        "expected": "一键收取",
+        "roi": [
+            27,
+            150.5,
+            223,
+            236
+        ],
+        "action": "Click",
+        "next": [
+            "supervision_terminal"
+        ],
+        "interrupt": [
+            "click_on_side"
+        ],
+        "post_wait_freezes": 50
+    },
+    "supervision_terminal": {
+        "recognition": "ColorMatch",
+        "roi": [
+            223,
+            173,
+            4,
+            4
+        ],
+        "lower": [
+            245,
+            197,
+            19
+        ],
+        "upper": [
+            255,
+            207,
+            29
+        ],
+        "action": "Click",
+        "target": [
+            40,
+            176.5,
+            186,
+            53
+        ],
+        "next": [
+            "play_button"
+        ],
+        "post_wait_freezes": 50
+    },
+    "play_button": {
+        "recognition": "TemplateMatch",
+        "template": "play_button__1094_355_125_133__1044_305_225_233.png",
+        "roi": [
+            1037,
+            294.5,
+            235,
+            233
+        ],
+        "action": "Click",
+        "next": [
+            "skip_button"
+        ],
+        "post_wait_freezes": 50
+    },
+    "skip_button": {
+        "recognition": "OCR",
+        "expected": "跳过",
+        "roi": [
+            1092,
+            3.5,
+            181,
+            81
+        ],
+        "action": "Click",
+        "next": [
+            "next_sinner",
+            "home_button",
+            "back_button"
+        ],
+        "interrupt": [
+            "click_on_side"
+        ],
+        "post_wait_freezes": 50
+    },
+    "next_sinner": {
+        "recognition": "OCR",
+        "expected": "下一位",
+        "roi": [
+            1023,
+            567.5,
+            266,
+            138
+        ],
+        "action": "Click",
+        "next": [
+            "skip_button"
+        ],
+        "post_wait_freezes": 50
+    }
+}
