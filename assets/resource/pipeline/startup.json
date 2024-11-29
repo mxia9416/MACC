@@ -1,0 +1,132 @@
+{
+    "startup": {
+        "action": "StartApp",
+        "package": "com.zy.wqmt.cn",
+        "next": [
+            "login"
+        ],
+        "interrupt": [
+            "delay"
+        ]
+    },
+    "delay": {
+        "action": "DoNothing",
+        "post_delay": 2000
+    },
+    "login": {
+        "recognition": "OCR",
+        "expected": "进入管理局",
+        "action": "Click",
+        "next": [
+            "startup_finish"
+        ],
+        "interrupt": [
+            "disconnect",
+            "login_loading",
+            "cancel_promotion",
+            "emotion_test"
+        ],
+        "post_wait_freezes": 2000
+    },
+    "disconnect": {
+        "recognition": "OCR",
+        "expected": "意识恢复中",
+        "roi": [
+            514,
+            321.5,
+            256,
+            183
+        ],
+        "action": "DoNothing",
+        "post_delay": 1000
+    },
+    "login_loading": {
+        "recognition": "OCR",
+        "expected": "加载中",
+        "roi": [
+            380,
+            412.5,
+            299,
+            174
+        ],
+        "post_wait_freezes": 1500
+    },
+    "cancel_promotion": {
+        "recognition": "OCR",
+        "expected": "今日不再弹出",
+        "roi": [
+            720,
+            240.5,
+            560,
+            479.5
+        ],
+        "replace": [
+            "百",
+            "日"
+        ],
+        "action": "Click",
+        "target": [
+            9,
+            11.5,
+            111,
+            96
+        ]
+    },
+    "emotion_test": {
+        "recognition": "OCR",
+        "expected": "检测",
+        "roi": [
+            509,
+            23.5,
+            673,
+            242
+        ],
+        "action": "Click",
+        "target": [
+            621,
+            362.5,
+            400,
+            166
+        ],
+        "next": [
+            "emotion_test2"
+        ]
+    },
+    "emotion_test2": {
+        "recognition": "OCR",
+        "expected": "完成",
+        "roi": [
+            533,
+            111.5,
+            574,
+            472
+        ],
+        "action": "Click",
+        "target": [
+            9,
+            11.5,
+            111,
+            96
+        ]
+    },
+    "startup_finish": {
+        "recognition": "ColorMatch",
+        "roi": [
+            421,
+            34.5,
+            2,
+            2
+        ],
+        "lower": [
+            250,
+            250,
+            250
+        ],
+        "upper": [
+            255,
+            255,
+            255
+        ],
+        "action": "StopTask"
+    }
+}
