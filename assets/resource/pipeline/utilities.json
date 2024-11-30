@@ -73,5 +73,29 @@
             "click_on_side"
         ],
         "post_wait_freezes": 30
+    },
+    "auto_clear_batch": {
+        "recognition": "OCR",
+        "expected": "连续扫荡",
+        "roi": [
+            455,
+            543.5,
+            767,
+            180
+        ],
+        "action": "Click"
+    },
+    "select_difficulty": {
+        "recognition": "OCR",
+        "expected": "已完成",
+        "roi": [
+            358,
+            421.5,
+            900,
+            247
+        ],
+        "action": "Click",
+        "order_by": "Horizontal",
+        "index": -1
     }
 }

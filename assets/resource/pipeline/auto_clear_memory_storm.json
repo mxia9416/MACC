@@ -1,0 +1,138 @@
+{
+    "echo_point": {
+        "next": [
+            "echo_point_tab"
+        ],
+        "interrupt": [
+            "memory_storm_tab",
+            "rust_river_tab",
+            "dythcity_tab",
+            "crisis_management2",
+            "crisis_management",
+            "home_button",
+            "back_button"
+        ]
+    },
+    "memory_point": {
+        "next": [
+            "memory_point_tab"
+        ],
+        "interrupt": [
+            "memory_storm_tab",
+            "rust_river_tab",
+            "dythcity_tab",
+            "crisis_management2",
+            "crisis_management",
+            "home_button",
+            "back_button"
+        ]
+    },
+    "impression_point": {
+        "next": [
+            "impression_point_tab"
+        ],
+        "interrupt": [
+            "memory_storm_tab",
+            "rust_river_tab",
+            "dythcity_tab",
+            "crisis_management2",
+            "crisis_management",
+            "home_button",
+            "back_button"
+        ]
+    },
+    "rust_river_tab": {
+        "recognition": "OCR",
+        "expected": "锈河",
+        "roi": [
+            114,
+            566.5,
+            1126,
+            159
+        ],
+        "action": "Click"
+    },
+    "memory_storm_tab": {
+        "recognition": "OCR",
+        "expected": "记忆风暴",
+        "roi": [
+            137,
+            131.5,
+            291,
+            298
+        ],
+        "action": "Click",
+        "post_wait_freezes": 1
+    },
+    "echo_point_tab": {
+        "recognition": "OCR",
+        "expected": "残响畸点",
+        "roi": [
+            11,
+            114.5,
+            334,
+            355
+        ],
+        "action": "Click",
+        "next": [
+            "memory_storm_complete"
+        ],
+        "interrupt": [
+            "auto_clear_batch",
+            "auto_clear",
+            "select_difficulty"
+        ]
+    },
+    "memory_point_tab": {
+        "recognition": "OCR",
+        "expected": "记忆畸点",
+        "roi": [
+            11,
+            114.5,
+            334,
+            355
+        ],
+        "action": "Click",
+        "next": [
+            "memory_storm_complete"
+        ],
+        "interrupt": [
+            "auto_clear_batch",
+            "auto_clear",
+            "select_difficulty"
+        ]
+    },
+    "impression_point_tab": {
+        "recognition": "OCR",
+        "expected": "印象畸点",
+        "roi": [
+            11,
+            114.5,
+            334,
+            355
+        ],
+        "action": "Click",
+        "next": [
+            "memory_storm_complete"
+        ],
+        "interrupt": [
+            "auto_clear_batch",
+            "auto_clear",
+            "select_difficulty"
+        ]
+    },
+    "memory_storm_complete": {
+        "recognition": "OCR",
+        "expected": "完成",
+        "roi": [
+            325,
+            496.5,
+            657,
+            227
+        ],
+        "action": "Click",
+        "next": [
+            "home_button"
+        ]
+    }
+}
