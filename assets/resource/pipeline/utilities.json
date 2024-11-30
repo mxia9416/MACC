@@ -1,1 +1,54 @@
-{}
+{
+    "click_on_side": {
+        "action": "Click",
+        "target": [
+            1183,
+            372.5,
+            92,
+            95
+        ],
+        "post_wait_freezes": 50
+    },
+    "back_button": {
+        "recognition": "TemplateMatch",
+        "template": "返回__23_16_46_50__0_0_119_116.png",
+        "roi": [
+            9,
+            7.5,
+            308,
+            84
+        ],
+        "action": "Click",
+        "next": [],
+        "post_wait_freezes": 50
+    },
+    "home_button": {
+        "recognition": "TemplateMatch",
+        "template": "主页__141_21_41_42__91_0_141_113.png",
+        "roi": [
+            9,
+            7.5,
+            308,
+            84
+        ],
+        "action": "Click",
+        "next": [],
+        "post_wait_freezes": 50
+    },
+    "swipe_left": {
+        "action": "Swipe",
+        "begin": [
+            1090,
+            372,
+            1,
+            1
+        ],
+        "end": [
+            800,
+            369,
+            1,
+            1
+        ],
+        "post_wait_freezes": 20
+    }
+}

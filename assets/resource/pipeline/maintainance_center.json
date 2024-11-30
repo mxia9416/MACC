@@ -26,32 +26,6 @@
             "back_button"
         ]
     },
-    "back_button": {
-        "recognition": "TemplateMatch",
-        "template": "返回__23_16_46_50__0_0_119_116.png",
-        "roi": [
-            9,
-            7.5,
-            308,
-            84
-        ],
-        "action": "Click",
-        "next": [],
-        "post_wait_freezes": 50
-    },
-    "home_button": {
-        "recognition": "TemplateMatch",
-        "template": "主页__141_21_41_42__91_0_141_113.png",
-        "roi": [
-            9,
-            7.5,
-            308,
-            84
-        ],
-        "action": "Click",
-        "next": [],
-        "post_wait_freezes": 50
-    },
     "maintenance_center": {
         "recognition": "TemplateMatch",
         "template": "整备中心__1023_636_86_46__973_586_186_134.png",
@@ -183,16 +157,6 @@
         ],
         "interrupt": [
             "click_on_side"
-        ],
-        "post_wait_freezes": 50
-    },
-    "click_on_side": {
-        "action": "Click",
-        "target": [
-            1183,
-            372.5,
-            92,
-            95
         ],
         "post_wait_freezes": 50
     },
