@@ -50,5 +50,21 @@
             1
         ],
         "post_wait_freezes": 20
+    },
+    "swipe_up": {
+        "action": "Swipe",
+        "begin": [
+            131,
+            646,
+            1,
+            1
+        ],
+        "end": [
+            131,
+            546,
+            1,
+            1
+        ],
+        "post_wait_freezes": 20
     }
 }
