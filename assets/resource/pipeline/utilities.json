@@ -6,8 +6,7 @@
             372.5,
             92,
             95
-        ],
-        "post_wait_freezes": 50
+        ]
     },
     "back_button": {
         "recognition": "TemplateMatch",
@@ -20,7 +19,7 @@
         ],
         "action": "Click",
         "next": [],
-        "post_wait_freezes": 50
+        "post_wait_freezes": 30
     },
     "home_button": {
         "recognition": "TemplateMatch",
@@ -32,8 +31,7 @@
             84
         ],
         "action": "Click",
-        "next": [],
-        "post_wait_freezes": 50
+        "post_wait_freezes": 30
     },
     "swipe_left": {
         "action": "Swipe",
@@ -66,5 +64,14 @@
             1
         ],
         "post_wait_freezes": 20
+    },
+    "auto_clear": {
+        "recognition": "OCR",
+        "expected": "扫荡",
+        "action": "Click",
+        "next": [
+            "click_on_side"
+        ],
+        "post_wait_freezes": 30
     }
 }

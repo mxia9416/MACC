@@ -6,12 +6,26 @@
             "login"
         ],
         "interrupt": [
+            "cancel_accouncement",
             "delay"
         ]
     },
     "delay": {
         "action": "DoNothing",
         "post_delay": 2000
+    },
+    "cancel_accouncement": {
+        "recognition": "OCR",
+        "expected": "公告",
+        "roi": [
+            145,
+            89.5,
+            337,
+            109
+        ],
+        "next": [
+            "click_on_side"
+        ]
     },
     "login": {
         "recognition": "OCR",
@@ -51,7 +65,7 @@
             299,
             174
         ],
-        "post_wait_freezes": 1500
+        "post_wait_freezes": 1000
     },
     "cancel_promotion": {
         "recognition": "OCR",
@@ -72,8 +86,7 @@
             11.5,
             111,
             96
-        ],
-        "post_wait_freezes": 30
+        ]
     },
     "cancel_promotion2": {
         "recognition": "OCR",
@@ -90,8 +103,7 @@
             15.5,
             104,
             76
-        ],
-        "post_wait_freezes": 30
+        ]
     },
     "emotion_test": {
         "recognition": "OCR",
@@ -129,8 +141,7 @@
             "collect_emotion_rewards15",
             "collect_emotion_rewards25",
             "click_on_side"
-        ],
-        "post_wait_freezes": 30
+        ]
     },
     "collect_emotion_rewards2": {
         "recognition": "OCR",
@@ -153,8 +164,7 @@
         ],
         "interrupt": [
             "click_on_side"
-        ],
-        "post_wait_freezes": 30
+        ]
     },
     "emotion_reward_complete2": {
         "recognition": "TemplateMatch",
@@ -167,8 +177,7 @@
         ],
         "next": [
             "click_on_side"
-        ],
-        "post_wait_freezes": 30
+        ]
     },
     "collect_emotion_rewards8": {
         "recognition": "OCR",
@@ -191,8 +200,7 @@
         ],
         "interrupt": [
             "click_on_side"
-        ],
-        "post_wait_freezes": 30
+        ]
     },
     "emotion_reward_complete8": {
         "recognition": "TemplateMatch",
@@ -205,8 +213,7 @@
         ],
         "next": [
             "click_on_side"
-        ],
-        "post_wait_freezes": 30
+        ]
     },
     "collect_emotion_rewards15": {
         "recognition": "OCR",
@@ -229,8 +236,7 @@
         ],
         "interrupt": [
             "click_on_side"
-        ],
-        "post_wait_freezes": 30
+        ]
     },
     "emotion_reward_complete15": {
         "recognition": "TemplateMatch",
@@ -243,8 +249,7 @@
         ],
         "next": [
             "click_on_side"
-        ],
-        "post_wait_freezes": 30
+        ]
     },
     "collect_emotion_rewards25": {
         "recognition": "OCR",
@@ -267,8 +272,7 @@
         ],
         "interrupt": [
             "click_on_side"
-        ],
-        "post_wait_freezes": 30
+        ]
     },
     "emotion_reward_complete25": {
         "recognition": "TemplateMatch",
@@ -281,8 +285,7 @@
         ],
         "next": [
             "click_on_side"
-        ],
-        "post_wait_freezes": 30
+        ]
     },
     "mail": {
         "recognition": "ColorMatch",
@@ -329,8 +332,7 @@
         ],
         "interrupt": [
             "click_on_mail"
-        ],
-        "post_wait_freezes": 30
+        ]
     },
     "confirm_mail": {
         "recognition": "ColorMatch",
@@ -353,8 +355,7 @@
         "count": 100,
         "next": [
             "home_button"
-        ],
-        "post_wait_freezes": 30
+        ]
     },
     "click_on_mail": {
         "action": "Click",

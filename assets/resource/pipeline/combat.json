@@ -1,0 +1,122 @@
+{
+    "darkness_well": {
+        "next": [
+            "darkness_well_tab"
+        ],
+        "interrupt": [
+            "inner_sea_tab",
+            "dythcity_tab",
+            "crisis_management2",
+            "crisis_management",
+            "home_button",
+            "back_button"
+        ]
+    },
+    "dythcity_tab": {
+        "recognition": "OCR",
+        "expected": "狄斯城",
+        "roi": [
+            972,
+            102.5,
+            294,
+            420
+        ],
+        "action": "Click"
+    },
+    "inner_sea_tab": {
+        "recognition": "OCR",
+        "expected": "内海",
+        "roi": [
+            114,
+            566.5,
+            1126,
+            159
+        ],
+        "action": "Click"
+    },
+    "darkness_well_tab": {
+        "recognition": "OCR",
+        "expected": "浊暗之",
+        "roi": [
+            64,
+            319.5,
+            346,
+            185
+        ],
+        "action": "Click",
+        "next": [
+            "paradise_phantasm"
+        ],
+        "interrupt": [
+            "switch_well"
+        ]
+    },
+    "paradise_phantasm": {
+        "recognition": "OCR",
+        "expected": "乐园幻境",
+        "roi": [
+            705,
+            262.5,
+            567,
+            451
+        ],
+        "action": "Click",
+        "target": [
+            1022,
+            453.5,
+            89,
+            82
+        ],
+        "next": [
+            "auto_well_complete"
+        ],
+        "interrupt": [
+            "auto_clear"
+        ],
+        "post_wait_freezes": 30
+    },
+    "auto_well_complete": {
+        "recognition": "ColorMatch",
+        "roi": [
+            629,
+            592.5,
+            227,
+            58
+        ],
+        "lower": [
+            65,
+            65,
+            65
+        ],
+        "upper": [
+            75,
+            75,
+            75
+        ],
+        "count": 1000,
+        "action": "Click",
+        "target": [
+            1145,
+            408.5,
+            101,
+            76
+        ],
+        "next": [
+            "home_button"
+        ],
+        "interrupt": [
+            "click_on_side"
+        ]
+    },
+    "switch_well": {
+        "recognition": "TemplateMatch",
+        "template": "switch_well__582_578_123_69__532_528_223_169.png",
+        "roi": [
+            508,
+            558.5,
+            268,
+            154
+        ],
+        "action": "Click"
+    }
+}

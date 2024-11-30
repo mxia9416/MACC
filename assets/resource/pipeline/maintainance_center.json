@@ -38,8 +38,7 @@
             422,
             196.5
         ],
-        "action": "Click",
-        "post_wait_freezes": 50
+        "action": "Click"
     },
     "friend_tab": {
         "recognition": "OCR",
@@ -57,8 +56,7 @@
             "home_button",
             "back_button"
         ],
-        "interrupt": [],
-        "post_wait_freezes": 50
+        "interrupt": []
     },
     "collect_friend_rewards": {
         "recognition": "OCR",
@@ -90,8 +88,7 @@
         "next": [
             "home_button",
             "back_button"
-        ],
-        "post_wait_freezes": 50
+        ]
     },
     "guild_tab": {
         "recognition": "OCR",
@@ -108,8 +105,7 @@
         ],
         "interrupt": [
             "click_on_side"
-        ],
-        "post_wait_freezes": 50
+        ]
     },
     "donate_tab": {
         "recognition": "OCR",
@@ -122,9 +118,29 @@
         ],
         "action": "Click",
         "next": [
-            "donate"
+            "donate_complete"
         ],
-        "post_wait_freezes": 50
+        "interrupt": [
+            "donate",
+            "click_on_side"
+        ]
+    },
+    "donate_complete": {
+        "recognition": "OCR",
+        "expected": "明日",
+        "roi": [
+            167,
+            564.5,
+            208,
+            55
+        ],
+        "next": [
+            "home_button",
+            "back_button"
+        ],
+        "interrupt": [
+            "click_on_side"
+        ]
     },
     "donate": {
         "recognition": "OCR",
@@ -137,13 +153,8 @@
         ],
         "action": "Click",
         "next": [
-            "home_button",
-            "back_button"
-        ],
-        "interrupt": [
             "click_on_side"
-        ],
-        "post_wait_freezes": 50
+        ]
     },
     "supervision_tab": {
         "recognition": "OCR",
@@ -175,7 +186,9 @@
         ],
         "action": "Click",
         "next": [
-            "supervision_terminal"
+            "supervision_terminal",
+            "home_button",
+            "back_button"
         ],
         "interrupt": [
             "click_on_side"
@@ -209,8 +222,7 @@
         ],
         "next": [
             "play_button"
-        ],
-        "post_wait_freezes": 50
+        ]
     },
     "play_button": {
         "recognition": "TemplateMatch",
@@ -224,8 +236,7 @@
         "action": "Click",
         "next": [
             "skip_button"
-        ],
-        "post_wait_freezes": 50
+        ]
     },
     "skip_button": {
         "recognition": "OCR",

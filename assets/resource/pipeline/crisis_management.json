@@ -30,8 +30,7 @@
             355,
             122
         ],
-        "action": "Click",
-        "post_wait_freezes": 30
+        "action": "Click"
     },
     "crisis_management2": {
         "recognition": "OCR",
@@ -42,8 +41,7 @@
             89,
             54
         ],
-        "action": "Click",
-        "post_wait_freezes": 30
+        "action": "Click"
     },
     "procument_tab": {
         "recognition": "OCR",
@@ -60,8 +58,7 @@
         ],
         "interrupt": [
             "swipe_up"
-        ],
-        "post_delay": 2000
+        ]
     },
     "selected_bundle_tab": {
         "recognition": "OCR",
@@ -78,8 +75,7 @@
         ],
         "interrupt": [
             "swipe_left"
-        ],
-        "post_wait_freezes": 30
+        ]
     },
     "find_free_bundle": {
         "recognition": "OCR",
@@ -93,8 +89,7 @@
         "next": [
             "purchase_free_bundle"
         ],
-        "action": "Click",
-        "post_wait_freezes": 30
+        "action": "Click"
     },
     "purchase_free_bundle": {
         "recognition": "OCR",
@@ -111,8 +106,7 @@
         ],
         "interrupt": [
             "click_on_side"
-        ],
-        "post_wait_freezes": 30
+        ]
     },
     "office_tab": {
         "recognition": "OCR",
@@ -123,11 +117,10 @@
             330,
             387
         ],
-        "action": "Click",
         "next": [
             "dispatch"
         ],
-        "post_wait_freezes": 30
+        "action": "Click"
     },
     "dispatch": {
         "recognition": "OCR",
@@ -136,8 +129,7 @@
         "next": [
             "collect_dispatch",
             "send_dispatch"
-        ],
-        "post_wait_freezes": 30
+        ]
     },
     "collect_dispatch": {
         "recognition": "OCR",
@@ -154,8 +146,7 @@
         ],
         "interrupt": [
             "click_on_side"
-        ],
-        "post_wait_freezes": 30
+        ]
     },
     "send_dispatch": {
         "recognition": "OCR",
@@ -172,8 +163,7 @@
         ],
         "interrupt": [
             "send_dispatch"
-        ],
-        "post_wait_freezes": 30
+        ]
     },
     "dispatch_complete": {
         "recognition": "OCR",
@@ -189,12 +179,11 @@
         ],
         "interrupt": [
             "back_button"
-        ],
-        "post_wait_freezes": 30
+        ]
     },
     "stamina": {
         "recognition": "TemplateMatch",
-        "template": "stamina__141_280_71_125__91_230_171_225.png",
+        "template": "stamina__150_351_55_53__100_301_155_153.png",
         "roi": [
             36,
             177.5,
@@ -235,8 +224,7 @@
         "inverse": true,
         "interrupt": [
             "click_on_side"
-        ],
-        "post_wait_freezes": 30
+        ]
     },
     "collect_stamina": {
         "recognition": "OCR",
@@ -250,7 +238,6 @@
         "action": "Click",
         "next": [
             "click_on_side"
-        ],
-        "post_wait_freezes": 30
+        ]
     }
 }
