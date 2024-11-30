@@ -1,1 +1,25 @@
-{}
+{
+    "procument": {
+        "next": [
+            "crisis_management"
+        ],
+        "interrupt": [
+            "home_button",
+            "back_button"
+        ]
+    },
+    "crisis_management": {
+        "recognition": "OCR",
+        "expected": "危机管理",
+        "roi": [
+            911,
+            587.5,
+            355,
+            122
+        ],
+        "action": "Click",
+        "next": [],
+        "interrupt": [],
+        "post_wait_freezes": 50
+    }
+}

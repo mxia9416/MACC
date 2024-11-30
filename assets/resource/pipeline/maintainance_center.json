@@ -1,27 +1,30 @@
 {
     "friend_points": {
         "next": [
-            "maintenance_center"
+            "friend_tab"
         ],
         "interrupt": [
+            "maintenance_center",
             "home_button",
             "back_button"
         ]
     },
     "guild": {
         "next": [
-            "maintenance_center2"
+            "guild_tab"
         ],
         "interrupt": [
+            "maintenance_center",
             "home_button",
             "back_button"
         ]
     },
     "supervision": {
         "next": [
-            "maintenance_center3"
+            "supervision_tab"
         ],
         "interrupt": [
+            "maintenance_center",
             "home_button",
             "back_button"
         ]
@@ -36,9 +39,6 @@
             196.5
         ],
         "action": "Click",
-        "next": [
-            "friend_tab"
-        ],
         "post_wait_freezes": 50
     },
     "friend_tab": {
@@ -93,21 +93,6 @@
         ],
         "post_wait_freezes": 50
     },
-    "maintenance_center2": {
-        "recognition": "TemplateMatch",
-        "template": "整备中心__1023_636_86_46__973_586_186_134.png",
-        "roi": [
-            858,
-            523.5,
-            422,
-            196.5
-        ],
-        "action": "Click",
-        "next": [
-            "guild_tab"
-        ],
-        "post_wait_freezes": 50
-    },
     "guild_tab": {
         "recognition": "OCR",
         "expected": "秘盟",
@@ -157,21 +142,6 @@
         ],
         "interrupt": [
             "click_on_side"
-        ],
-        "post_wait_freezes": 50
-    },
-    "maintenance_center3": {
-        "recognition": "TemplateMatch",
-        "template": "整备中心__1023_636_86_46__973_586_186_134.png",
-        "roi": [
-            858,
-            523.5,
-            422,
-            196.5
-        ],
-        "action": "Click",
-        "next": [
-            "supervision_tab"
         ],
         "post_wait_freezes": 50
     },
@@ -268,9 +238,28 @@
         ],
         "action": "Click",
         "next": [
+            "next_dialog",
             "next_sinner",
             "home_button",
             "back_button"
+        ],
+        "interrupt": [
+            "click_on_side"
+        ],
+        "post_wait_freezes": 50
+    },
+    "next_dialog": {
+        "recognition": "TemplateMatch",
+        "template": "next_dialog__1161_559_22_24__1111_509_122_124.png",
+        "roi": [
+            1070,
+            535.5,
+            148,
+            145
+        ],
+        "action": "Click",
+        "next": [
+            "skip_button"
         ],
         "interrupt": [
             "click_on_side"
