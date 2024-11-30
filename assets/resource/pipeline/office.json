@@ -1,111 +1,26 @@
 {
-    "procument": {
+    "dispatch": {
         "next": [
-            "procument_tab"
+            "start_dispatch"
         ],
         "interrupt": [
+            "office_tab",
             "crisis_management2",
             "crisis_management",
             "home_button",
             "back_button"
         ]
     },
-    "office": {
+    "stamina": {
         "next": [
-            "office_tab"
+            "start_stamina"
         ],
         "interrupt": [
+            "office_tab",
             "crisis_management2",
             "crisis_management",
-            "home_button",
-            "back_button"
-        ]
-    },
-    "crisis_management": {
-        "recognition": "TemplateMatch",
-        "template": "crisis_management__926_631_73_32__876_581_173_132.png",
-        "roi": [
-            911,
-            587.5,
-            355,
-            122
-        ],
-        "action": "Click"
-    },
-    "crisis_management2": {
-        "recognition": "OCR",
-        "expected": "危机管理",
-        "roi": [
-            920,
-            619.5,
-            89,
-            54
-        ],
-        "action": "Click"
-    },
-    "procument_tab": {
-        "recognition": "OCR",
-        "expected": "采购办",
-        "roi": [
-            938,
-            254.5,
-            330,
-            387
-        ],
-        "action": "Click",
-        "next": [
-            "selected_bundle_tab"
-        ],
-        "interrupt": [
-            "swipe_up"
-        ]
-    },
-    "selected_bundle_tab": {
-        "recognition": "OCR",
-        "expected": "精选礼包",
-        "roi": [
-            9,
-            97.5,
-            299,
-            620
-        ],
-        "action": "Click",
-        "next": [
-            "find_free_bundle"
-        ],
-        "interrupt": [
-            "swipe_left"
-        ]
-    },
-    "find_free_bundle": {
-        "recognition": "OCR",
-        "expected": "每日免费补给",
-        "roi": [
-            325,
-            146.5,
-            944,
-            535
-        ],
-        "next": [
-            "purchase_free_bundle"
-        ],
-        "action": "Click"
-    },
-    "purchase_free_bundle": {
-        "recognition": "OCR",
-        "expected": "购买",
-        "roi": [
-            752,
-            458.5,
-            420,
-            219
-        ],
-        "action": "Click",
-        "next": [
+            "back_button",
             "home_button"
-        ],
-        "interrupt": [
-            "click_on_side"
         ]
     },
     "office_tab": {
@@ -122,7 +37,7 @@
         ],
         "action": "Click"
     },
-    "dispatch": {
+    "start_dispatch": {
         "recognition": "OCR",
         "expected": "派遣",
         "action": "Click",
@@ -173,15 +88,9 @@
             424.5,
             47,
             75
-        ],
-        "next": [
-            "stamina"
-        ],
-        "interrupt": [
-            "back_button"
         ]
     },
-    "stamina": {
+    "start_stamina": {
         "recognition": "TemplateMatch",
         "template": "stamina__150_351_55_53__100_301_155_153.png",
         "roi": [

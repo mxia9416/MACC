@@ -18,7 +18,6 @@
             84
         ],
         "action": "Click",
-        "next": [],
         "post_wait_freezes": 30
     },
     "home_button": {
@@ -97,5 +96,38 @@
         "action": "Click",
         "order_by": "Horizontal",
         "index": -1
+    },
+    "crisis_management": {
+        "recognition": "TemplateMatch",
+        "template": "crisis_management__926_631_73_32__876_581_173_132.png",
+        "roi": [
+            911,
+            587.5,
+            355,
+            122
+        ],
+        "action": "Click"
+    },
+    "crisis_management2": {
+        "recognition": "OCR",
+        "expected": "危机管理",
+        "roi": [
+            920,
+            619.5,
+            89,
+            54
+        ],
+        "action": "Click"
+    },
+    "maintenance_center": {
+        "recognition": "TemplateMatch",
+        "template": "整备中心__1023_636_86_46__973_586_186_134.png",
+        "roi": [
+            858,
+            523.5,
+            422,
+            196.5
+        ],
+        "action": "Click"
     }
 }

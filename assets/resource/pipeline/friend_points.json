@@ -1,0 +1,62 @@
+{
+    "friend_points": {
+        "next": [
+            "friend_tab"
+        ],
+        "interrupt": [
+            "maintenance_center",
+            "home_button",
+            "back_button"
+        ]
+    },
+    "friend_tab": {
+        "recognition": "OCR",
+        "expected": "好友",
+        "roi": [
+            1048,
+            214.5,
+            232,
+            210
+        ],
+        "action": "Click",
+        "next": [
+            "collect_friend_rewards",
+            "send_friend_rewards",
+            "home_button",
+            "back_button"
+        ],
+        "interrupt": []
+    },
+    "collect_friend_rewards": {
+        "recognition": "OCR",
+        "expected": "一键领取",
+        "roi": [
+            797,
+            446.5,
+            483,
+            273.5
+        ],
+        "action": "Click",
+        "next": [
+            "send_friend_rewards",
+            "home_button",
+            "back_button"
+        ],
+        "post_wait_freezes": 50
+    },
+    "send_friend_rewards": {
+        "recognition": "OCR",
+        "expected": "键赠送",
+        "roi": [
+            831,
+            514.5,
+            449,
+            205.5
+        ],
+        "action": "Click",
+        "next": [
+            "home_button",
+            "back_button"
+        ]
+    }
+}

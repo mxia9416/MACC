@@ -1,0 +1,78 @@
+{
+    "procument": {
+        "next": [
+            "procument_tab"
+        ],
+        "interrupt": [
+            "crisis_management2",
+            "crisis_management",
+            "home_button",
+            "back_button"
+        ]
+    },
+    "procument_tab": {
+        "recognition": "OCR",
+        "expected": "采购办",
+        "roi": [
+            938,
+            254.5,
+            330,
+            387
+        ],
+        "action": "Click",
+        "next": [
+            "selected_bundle_tab"
+        ],
+        "interrupt": [
+            "swipe_up"
+        ]
+    },
+    "selected_bundle_tab": {
+        "recognition": "OCR",
+        "expected": "精选礼包",
+        "roi": [
+            9,
+            97.5,
+            299,
+            620
+        ],
+        "action": "Click",
+        "next": [
+            "find_free_bundle"
+        ],
+        "interrupt": [
+            "swipe_left"
+        ]
+    },
+    "find_free_bundle": {
+        "recognition": "OCR",
+        "expected": "每日免费补给",
+        "roi": [
+            325,
+            146.5,
+            944,
+            535
+        ],
+        "next": [
+            "purchase_free_bundle"
+        ],
+        "action": "Click"
+    },
+    "purchase_free_bundle": {
+        "recognition": "OCR",
+        "expected": "购买",
+        "roi": [
+            752,
+            458.5,
+            420,
+            219
+        ],
+        "action": "Click",
+        "next": [
+            "home_button"
+        ],
+        "interrupt": [
+            "click_on_side"
+        ]
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "guild": {
+        "next": [
+            "guild_tab"
+        ],
+        "interrupt": [
+            "maintenance_center",
+            "home_button",
+            "back_button"
+        ]
+    },
+    "guild_tab": {
+        "recognition": "OCR",
+        "expected": "秘盟",
+        "roi": [
+            947,
+            124.5,
+            327,
+            273
+        ],
+        "action": "Click",
+        "next": [
+            "donate_tab"
+        ],
+        "interrupt": [
+            "click_on_side"
+        ]
+    },
+    "donate_tab": {
+        "recognition": "OCR",
+        "expected": "捐赠",
+        "roi": [
+            810,
+            505.5,
+            224,
+            214.5
+        ],
+        "action": "Click",
+        "next": [
+            "donate_complete"
+        ],
+        "interrupt": [
+            "donate",
+            "click_on_side"
+        ]
+    },
+    "donate_complete": {
+        "recognition": "OCR",
+        "expected": "明日",
+        "roi": [
+            167,
+            564.5,
+            208,
+            55
+        ],
+        "next": [
+            "home_button",
+            "back_button"
+        ],
+        "interrupt": [
+            "click_on_side"
+        ]
+    },
+    "donate": {
+        "recognition": "OCR",
+        "expected": "全部捐赠",
+        "roi": [
+            82,
+            438.5,
+            369,
+            267
+        ],
+        "action": "Click",
+        "next": [
+            "click_on_side"
+        ]
+    }
+}
