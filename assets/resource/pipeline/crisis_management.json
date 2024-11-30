@@ -10,6 +10,17 @@
             "back_button"
         ]
     },
+    "office": {
+        "next": [
+            "office_tab"
+        ],
+        "interrupt": [
+            "crisis_management2",
+            "crisis_management",
+            "home_button",
+            "back_button"
+        ]
+    },
     "crisis_management": {
         "recognition": "TemplateMatch",
         "template": "crisis_management__926_631_73_32__876_581_173_132.png",
@@ -99,6 +110,145 @@
             "home_button"
         ],
         "interrupt": [
+            "click_on_side"
+        ],
+        "post_wait_freezes": 30
+    },
+    "office_tab": {
+        "recognition": "OCR",
+        "expected": "管理局",
+        "roi": [
+            938,
+            254.5,
+            330,
+            387
+        ],
+        "action": "Click",
+        "next": [
+            "dispatch"
+        ],
+        "post_wait_freezes": 30
+    },
+    "dispatch": {
+        "recognition": "OCR",
+        "expected": "派遣",
+        "action": "Click",
+        "next": [
+            "collect_dispatch",
+            "send_dispatch"
+        ],
+        "post_wait_freezes": 30
+    },
+    "collect_dispatch": {
+        "recognition": "OCR",
+        "roi": [
+            993,
+            263.5,
+            257,
+            353
+        ],
+        "expected": "一键领取",
+        "action": "Click",
+        "next": [
+            "send_dispatch"
+        ],
+        "interrupt": [
+            "click_on_side"
+        ],
+        "post_wait_freezes": 30
+    },
+    "send_dispatch": {
+        "recognition": "OCR",
+        "expected": "一键派遣",
+        "roi": [
+            993,
+            263.5,
+            257,
+            353
+        ],
+        "action": "Click",
+        "next": [
+            "dispatch_complete"
+        ],
+        "interrupt": [
+            "send_dispatch"
+        ],
+        "post_wait_freezes": 30
+    },
+    "dispatch_complete": {
+        "recognition": "OCR",
+        "expected": "3",
+        "roi": [
+            1110,
+            424.5,
+            47,
+            75
+        ],
+        "next": [
+            "stamina"
+        ],
+        "interrupt": [
+            "back_button"
+        ],
+        "post_wait_freezes": 30
+    },
+    "stamina": {
+        "recognition": "TemplateMatch",
+        "template": "stamina__141_280_71_125__91_230_171_225.png",
+        "roi": [
+            36,
+            177.5,
+            353,
+            353
+        ],
+        "action": "Click",
+        "next": [
+            "stamina_complete"
+        ],
+        "interrupt": [
+            "collect_stamina"
+        ],
+        "post_wait_freezes": 30
+    },
+    "stamina_complete": {
+        "recognition": "ColorMatch",
+        "roi": [
+            847,
+            271.5,
+            213,
+            337
+        ],
+        "lower": [
+            150,
+            5,
+            5
+        ],
+        "upper": [
+            200,
+            15,
+            15
+        ],
+        "action": "DoNothing",
+        "next": [
+            "home_button"
+        ],
+        "inverse": true,
+        "interrupt": [
+            "click_on_side"
+        ],
+        "post_wait_freezes": 30
+    },
+    "collect_stamina": {
+        "recognition": "OCR",
+        "expected": "领取",
+        "roi": [
+            822,
+            264.5,
+            275,
+            355
+        ],
+        "action": "Click",
+        "next": [
             "click_on_side"
         ],
         "post_wait_freezes": 30
