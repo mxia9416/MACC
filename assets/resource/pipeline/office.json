@@ -32,9 +32,6 @@
             330,
             387
         ],
-        "next": [
-            "dispatch"
-        ],
         "action": "Click"
     },
     "start_dispatch": {
@@ -148,6 +145,6 @@
         "next": [
             "click_on_side"
         ],
-        "post_wait_freezes": 50
+        "post_wait_freezes": 200
     }
 }

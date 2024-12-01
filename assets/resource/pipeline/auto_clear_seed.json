@@ -1,0 +1,62 @@
+{
+    "seed": {
+        "next": [
+            "seed_tab_2"
+        ],
+        "interrupt": [
+            "seed_tab",
+            "rust_river_tab",
+            "dythcity_tab",
+            "crisis_management2",
+            "crisis_management",
+            "home_button",
+            "back_button"
+        ]
+    },
+    "seed_tab": {
+        "recognition": "TemplateMatch",
+        "template": "seed__872_55_73_87__822_5_173_187.png",
+        "roi": [
+            822,
+            5,
+            173,
+            187
+        ],
+        "action": "Click",
+        "post_wait_freezes": 1
+    },
+    "seed_tab_2": {
+        "recognition": "OCR",
+        "expected": "恶兆之种",
+        "roi": [
+            17,
+            90.5,
+            341,
+            361
+        ],
+        "action": "Click",
+        "interrupt": [
+            "auto_clear_batch",
+            "auto_clear",
+            "select_difficulty"
+        ],
+        "next": [
+            "seed_complete"
+        ],
+        "post_wait_freezes": 1
+    },
+    "seed_complete": {
+        "recognition": "OCR",
+        "expected": "完成",
+        "roi": [
+            325,
+            496.5,
+            657,
+            227
+        ],
+        "action": "Click",
+        "next": [
+            "home_button"
+        ]
+    }
+}

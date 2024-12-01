@@ -40,7 +40,8 @@
             "login_loading",
             "cancel_promotion",
             "emotion_test",
-            "cancel_promotion2"
+            "cancel_promotion2",
+            "click_on_side"
         ],
         "post_wait_freezes": 5000
     },
@@ -87,7 +88,7 @@
             111,
             96
         ],
-        "post_wait_freezes": 200
+        "post_wait_freezes": 1000
     },
     "cancel_promotion2": {
         "recognition": "OCR",
@@ -250,7 +251,8 @@
         ],
         "next": [
             "click_on_side"
-        ]
+        ],
+        "post_wait_freezes": 50
     },
     "collect_emotion_rewards25": {
         "recognition": "OCR",

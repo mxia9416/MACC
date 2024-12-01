@@ -1,0 +1,110 @@
+{
+    "darkness_zone": {
+        "next": [
+            "darkness_zone_tab"
+        ],
+        "interrupt": [
+            "inner_sea_tab",
+            "dythcity_tab",
+            "crisis_management2",
+            "crisis_management",
+            "home_button",
+            "back_button"
+        ]
+    },
+    "darkness_zone_tab": {
+        "recognition": "OCR",
+        "expected": "破碎防线",
+        "roi": [
+            564,
+            251.5,
+            454,
+            284
+        ],
+        "action": "DoNothing",
+        "next": [
+            "check_darkness_zone",
+            "end"
+        ],
+        "interrupt": []
+    },
+    "check_darkness_zone": {
+        "recognition": "ColorMatch",
+        "roi": [
+            853,
+            323,
+            2,
+            2
+        ],
+        "lower": [
+            253,
+            207,
+            19
+        ],
+        "upper": [
+            255,
+            210,
+            24
+        ],
+        "count": 2,
+        "action": "Click",
+        "target": "darkness_zone_tab",
+        "next": [
+            "darkness_zone_rewards"
+        ]
+    },
+    "darkness_zone_rewards": {
+        "recognition": "TemplateMatch",
+        "template": "darkness_zone_rewards__66_533_41_45__16_483_141_145.png",
+        "roi": [
+            29,
+            461.5,
+            125,
+            232
+        ],
+        "action": "Click",
+        "next": [
+            "back_button",
+            "home_button"
+        ],
+        "interrupt": [
+            "collect_darkness_zone_rewards",
+            "find_collectable",
+            "click_on_side"
+        ]
+    },
+    "collect_darkness_zone_rewards": {
+        "recognition": "OCR",
+        "expected": "一键领取",
+        "roi": [
+            857,
+            603.5,
+            249,
+            97
+        ],
+        "action": "Click",
+        "interrupt": [
+            "find_collectable",
+            "click_on_side"
+        ],
+        "post_wait_freezes": 200
+    },
+    "find_collectable": {
+        "recognition": "TemplateMatch",
+        "template": "yellow_dot__378_386_5_5__328_336_105_105.png",
+        "roi": [
+            358,
+            371.5,
+            45,
+            180
+        ],
+        "action": "Click",
+        "target_offset": [
+            0,
+            25,
+            0,
+            0
+        ],
+        "post_wait_freezes": 50
+    }
+}

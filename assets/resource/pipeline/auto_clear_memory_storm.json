@@ -1,4 +1,16 @@
 {
+    "memory_storm": {
+        "next": [],
+        "interrupt": [
+            "memory_storm_tab",
+            "rust_river_tab",
+            "dythcity_tab",
+            "crisis_management2",
+            "crisis_management",
+            "home_button",
+            "back_button"
+        ]
+    },
     "echo_point": {
         "next": [
             "echo_point_tab"
