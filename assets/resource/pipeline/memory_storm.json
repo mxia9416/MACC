@@ -1,7 +1,7 @@
 {
     "memory_storm": {
         "next": [
-            "memory_point"
+            "select_memory_storm"
         ],
         "interrupt": [
             "memory_storm_tab",
@@ -36,27 +36,7 @@
         "action": "Click",
         "post_wait_freezes": 1
     },
-    "echo_point": {
-        "recognition": "OCR",
-        "expected": "残响畸点",
-        "roi": [
-            11,
-            114.5,
-            334,
-            355
-        ],
-        "action": "Click",
-        "next": [
-            "memory_storm_complete",
-            "auto_clear_fail"
-        ],
-        "interrupt": [
-            "select_difficulty",
-            "auto_clear_batch",
-            "auto_clear"
-        ]
-    },
-    "memory_point": {
+    "select_memory_storm": {
         "recognition": "OCR",
         "expected": "记忆畸点",
         "roi": [
@@ -67,47 +47,14 @@
         ],
         "action": "Click",
         "next": [
-            "memory_storm_complete",
+            "Dungeon_not_open",
+            "auto_clear_complete",
             "auto_clear_fail"
         ],
         "interrupt": [
             "select_difficulty",
             "auto_clear_batch",
             "auto_clear"
-        ]
-    },
-    "impression_point": {
-        "recognition": "OCR",
-        "expected": "印象畸点",
-        "roi": [
-            11,
-            114.5,
-            334,
-            355
-        ],
-        "action": "Click",
-        "next": [
-            "memory_storm_complete",
-            "auto_clear_fail"
-        ],
-        "interrupt": [
-            "select_difficulty",
-            "auto_clear_batch",
-            "auto_clear"
-        ]
-    },
-    "memory_storm_complete": {
-        "recognition": "OCR",
-        "expected": "完成",
-        "roi": [
-            325,
-            496.5,
-            657,
-            227
-        ],
-        "action": "Click",
-        "next": [
-            "home_button"
         ]
     }
 }

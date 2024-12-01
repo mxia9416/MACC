@@ -42,23 +42,9 @@
             "auto_clear"
         ],
         "next": [
-            "skill_complete",
+            "auto_clear_complete",
             "auto_clear_fail"
         ],
         "post_wait_freezes": 1
-    },
-    "skill_complete": {
-        "recognition": "OCR",
-        "expected": "完成",
-        "roi": [
-            325,
-            496.5,
-            657,
-            227
-        ],
-        "action": "Click",
-        "next": [
-            "home_button"
-        ]
     }
 }

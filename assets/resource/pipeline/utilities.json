@@ -126,6 +126,20 @@
             "home_button"
         ]
     },
+    "auto_clear_complete": {
+        "recognition": "OCR",
+        "expected": "完成",
+        "roi": [
+            325,
+            496.5,
+            657,
+            227
+        ],
+        "action": "Click",
+        "next": [
+            "home_button"
+        ]
+    },
     "select_difficulty": {
         "recognition": "OCR",
         "expected": "已完成",
@@ -171,6 +185,19 @@
             196.5
         ],
         "action": "Click"
+    },
+    "Dungeon_not_open": {
+        "recognition": "OCR",
+        "expected": "开放",
+        "roi": [
+            448,
+            292.5,
+            391,
+            55
+        ],
+        "next": [
+            "home_button"
+        ]
     },
     "end": {},
     "combat_auto_clear": {}

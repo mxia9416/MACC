@@ -1,1 +1,47 @@
-{}
+{
+    "talent": {
+        "next": [
+            "talent_tab"
+        ],
+        "interrupt": [
+            "rust_river_tab",
+            "dythcity_tab",
+            "crisis_management2",
+            "crisis_management",
+            "home_button",
+            "back_button"
+        ]
+    },
+    "talent_tab": {
+        "recognition": "TemplateMatch",
+        "template": "talent__961_324_89_88__911_274_189_188.png",
+        "action": "Click",
+        "next": [
+            "select_talent"
+        ],
+        "interrupt": [
+            "swipe_up"
+        ]
+    },
+    "select_talent": {
+        "recognition": "OCR",
+        "expected": "精准",
+        "roi": [
+            30,
+            116.5,
+            310,
+            603
+        ],
+        "action": "Click",
+        "next": [
+            "Dungeon_not_open",
+            "auto_clear_complete",
+            "auto_clear_fail"
+        ],
+        "interrupt": [
+            "select_difficulty",
+            "auto_clear_batch",
+            "auto_clear"
+        ]
+    }
+}
