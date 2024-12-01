@@ -36,12 +36,14 @@
         ],
         "action": "Click",
         "interrupt": [
+            "select_difficulty",
             "auto_clear_batch",
-            "auto_clear",
-            "select_difficulty"
+            "auto_clear_max",
+            "auto_clear"
         ],
         "next": [
-            "seed_complete"
+            "seed_complete",
+            "auto_clear_fail"
         ],
         "post_wait_freezes": 1
     },

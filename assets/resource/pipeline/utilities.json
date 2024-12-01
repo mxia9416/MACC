@@ -85,6 +85,47 @@
         ],
         "action": "Click"
     },
+    "auto_clear_max": {
+        "recognition": "ColorMatch",
+        "roi": [
+            891,
+            461.5,
+            13,
+            15
+        ],
+        "lower": [
+            66,
+            69,
+            77
+        ],
+        "upper": [
+            68,
+            71,
+            79
+        ],
+        "action": "Click",
+        "post_wait_freezes": 20
+    },
+    "auto_clear_fail": {
+        "recognition": "OCR",
+        "expected": "不足",
+        "roi": [
+            380,
+            298.5,
+            522,
+            131
+        ],
+        "action": "Click",
+        "target": [
+            385,
+            471.5,
+            224,
+            56
+        ],
+        "next": [
+            "home_button"
+        ]
+    },
     "select_difficulty": {
         "recognition": "OCR",
         "expected": "已完成",
@@ -131,5 +172,6 @@
         ],
         "action": "Click"
     },
-    "end": {}
+    "end": {},
+    "combat_auto_clear": {}
 }
