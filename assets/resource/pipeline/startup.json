@@ -42,7 +42,7 @@
             "emotion_test",
             "cancel_promotion2"
         ],
-        "post_wait_freezes": 2000
+        "post_wait_freezes": 5000
     },
     "disconnect": {
         "recognition": "OCR",
@@ -86,7 +86,8 @@
             11.5,
             111,
             96
-        ]
+        ],
+        "post_wait_freezes": 200
     },
     "cancel_promotion2": {
         "recognition": "OCR",

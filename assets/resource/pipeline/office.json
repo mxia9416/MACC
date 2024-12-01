@@ -147,6 +147,7 @@
         "action": "Click",
         "next": [
             "click_on_side"
-        ]
+        ],
+        "post_wait_freezes": 50
     }
 }

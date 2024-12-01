@@ -6,7 +6,8 @@
             372.5,
             92,
             95
-        ]
+        ],
+        "post_wait_freezes": 30
     },
     "back_button": {
         "recognition": "TemplateMatch",

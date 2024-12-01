@@ -123,7 +123,9 @@
         ],
         "action": "Click",
         "next": [
-            "skip_button"
+            "skip_button",
+            "home_button",
+            "back_button"
         ],
         "interrupt": [
             "click_on_side"
