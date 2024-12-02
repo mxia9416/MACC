@@ -32,11 +32,18 @@
             330,
             387
         ],
-        "action": "Click"
+        "action": "Click",
+        "post_wait_freezes": 50
     },
     "start_dispatch": {
         "recognition": "OCR",
         "expected": "派遣",
+        "roi": [
+            491,
+            421.5,
+            142,
+            105
+        ],
         "action": "Click",
         "next": [
             "collect_dispatch",

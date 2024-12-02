@@ -1,0 +1,114 @@
+{
+    "battle_pass": {
+        "next": [
+            "bp_tab"
+        ],
+        "interrupt": [
+            "crisis_management2",
+            "crisis_management",
+            "home_button",
+            "back_button"
+        ]
+    },
+    "bp_tab": {
+        "recognition": "OCR",
+        "expected": "监察密令",
+        "roi": [
+            959,
+            381.5,
+            314,
+            272
+        ],
+        "action": "Click",
+        "target_offset": [
+            -20,
+            0,
+            0,
+            0
+        ],
+        "next": [
+            "bp_complete"
+        ],
+        "interrupt": [
+            "collect_bp_weekly_top",
+            "collect_bp_task",
+            "find_collectable_bp",
+            "click_on_side"
+        ],
+        "post_wait_freezes": 100
+    },
+    "collect_bp_weekly_top": {
+        "recognition": "TemplateMatch",
+        "template": "bp_top__921_86_47_49__871_36_147_149.png",
+        "roi": [
+            908,
+            77.5,
+            165,
+            64
+        ],
+        "action": "Click",
+        "next": [
+            "bp_top_confirm"
+        ]
+    },
+    "bp_top_confirm": {
+        "recognition": "OCR",
+        "expected": "直接领取",
+        "roi": [
+            375,
+            446.5,
+            260,
+            97
+        ],
+        "action": "Click"
+    },
+    "collect_bp_task": {
+        "recognition": "OCR",
+        "expected": "一键领取",
+        "roi": [
+            669,
+            542.5,
+            584,
+            107
+        ],
+        "action": "Click",
+        "post_wait_freezes": 200
+    },
+    "find_collectable_bp": {
+        "recognition": "TemplateMatch",
+        "template": "yellow_dot__458_339_13_14__408_289_113_114.png",
+        "roi": [
+            393,
+            168.5,
+            664,
+            546
+        ],
+        "action": "Click",
+        "target_offset": [
+            0,
+            25,
+            0,
+            0
+        ],
+        "order_by": "Vertical",
+        "threshold": 0.85,
+        "post_wait_freezes": 50
+    },
+    "bp_complete": {
+        "recognition": "TemplateMatch",
+        "template": "yellow_dot__458_339_13_14__408_289_113_114.png",
+        "roi": [
+            393,
+            168.5,
+            664,
+            546
+        ],
+        "inverse": true,
+        "next": [
+            "home_button"
+        ],
+        "interrupt": [
+            "click_on_side"
+        ]
+    }
+}
