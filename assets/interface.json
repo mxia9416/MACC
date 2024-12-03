@@ -14,56 +14,128 @@
         {
             "name": "官服",
             "path": [
-                "{PROJECT_DIR}/resource"
+                "{PROJECT_DIR}/resource/base"
             ]
         },
         {
-            "name": "B 服",
+            "name": "国际繁中",
             "path": [
                 "{PROJECT_DIR}/resource",
-                "{PROJECT_DIR}/resource_bilibili"
+                "{PROJECT_DIR}/global"
             ]
         }
     ],
     "task": [
         {
-            "name": "普通任务",
-            "entry": "MyTask1"
+            "name": "进入游戏",
+            "entry": "startup"
         },
         {
-            "name": "选项任务",
-            "entry": "MyTask2",
+            "name": "秘盟捐赠",
+            "entry": "guild"
+        },
+        {
+            "name": "好友点数",
+            "entry": "friend_points"
+        },
+        {
+            "name": "监管奖励",
+            "entry": "supervision"
+        },
+        {
+            "name": "采购办免费礼包",
+            "entry": "procument"
+        },
+        {
+            "name": "一键派遣",
+            "entry": "dispatch"
+        },
+        {
+            "name": "领取体力",
+            "entry": "stamina"
+        },
+        {
+            "name": "扫荡记忆风暴",
+            "entry": "memory_storm",
             "option": [
-                "任务选项1"
+                "畸点选择"
             ]
         },
         {
-            "name": "参数任务",
-            "entry": "MyTask3",
+            "name": "扫荡浊暗之阱",
+            "entry": "darkness_well"
+        },
+        {
+            "name": "扫荡破碎防线:暗域",
+            "entry": "darkness_zone"
+        },
+        {
+            "name": "全体力作战扫荡",
+            "entry": "combat_auto_clear",
             "option": [
-                "任务选项1"
+                "作战区域"
             ],
             "pipeline_override": {}
+        },
+        {
+            "name": "每日/密令奖励",
+            "entry": "battle_pass"
         }
     ],
     "option": {
-        "任务选项1": {
+        "畸点选择": {
             "cases": [
                 {
-                    "name": "文本1",
-                    "pipeline_override": {
-                        "OcrTask": {
-                            "text": "文本1"
-                        }
-                    }
+                    "name": "记忆畸点",
+                    "pipeline_override": {}
                 },
                 {
-                    "name": "文本2",
-                    "pipeline_override": {
-                        "OcrTask": {
-                            "text": "文本2"
-                        }
-                    }
+                    "name": "印象畸点",
+                    "pipeline_override": {}
+                },
+                {
+                    "name": "残响畸点",
+                    "pipeline_override": {}
+                }
+            ]
+        },
+        "作战区域": {
+            "cases": [
+                {
+                    "name": "淘金狂热",
+                    "pipeline_override": {}
+                },
+                {
+                    "name": "恶兆之种",
+                    "pipeline_override": {}
+                },
+                {
+                    "name": "禁区探查(技能书)",
+                    "pipeline_override": {}
+                },
+                {
+                    "name": "帕尔马废墟:坚韧",
+                    "pipeline_override": {}
+                },
+                {
+                    "name": "帕尔马废墟:狂暴",
+                    "pipeline_override": {}
+                },
+                {
+                    "name": "帕尔马废墟:诡秘",
+                    "pipeline_override": {}
+                },
+                {
+                    "name": "帕尔马废墟:精准",
+                    "pipeline_override": {}
+                },
+                {
+                    "name": "帕尔马废墟:异能",
+                    "pipeline_override": {}
+                },
+                {
+                    "name": "帕尔马废墟:启迪",
+                    "pipeline_override": {}
                 }
             ]
         }
