@@ -1,16 +1,13 @@
 {
+    "name": "MACC",
+    "version": "0.1",
+    "url": "https://github.com/mxia9416/MACC",
+    "default_controller": "adb",
+    "lock_controller": true,
     "controller": [
         {
             "name": "安卓端",
             "type": "Adb"
-        },
-        {
-            "name": "桌面端",
-            "type": "Win32",
-            "win32": {
-                "class_regex": ".*",
-                "window_regex": "Visual Studio"
-            }
         }
     ],
     "resource": [
