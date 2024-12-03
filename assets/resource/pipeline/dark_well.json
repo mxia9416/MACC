@@ -5,14 +5,14 @@
         ],
         "interrupt": [
             "inner_sea_tab",
-            "dythcity_tab",
+            "discity_tab",
             "crisis_management2",
             "crisis_management",
             "home_button",
             "back_button"
         ]
     },
-    "dythcity_tab": {
+    "discity_tab": {
         "recognition": "OCR",
         "expected": "狄斯城",
         "roi": [
