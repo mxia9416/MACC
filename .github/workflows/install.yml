@@ -229,6 +229,7 @@ jobs:
               echo "Skipping non-directory: $f"
             fi
           done
+
       - uses: softprops/action-gh-release@v2
         with:
           files: assets/*
