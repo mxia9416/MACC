@@ -41,6 +41,7 @@
         "interrupt": [
             "select_difficulty",
             "auto_clear_batch",
+            "auto_clear_max",
             "auto_clear"
         ]
     }
