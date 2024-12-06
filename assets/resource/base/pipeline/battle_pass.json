@@ -129,6 +129,7 @@
             546
         ],
         "inverse": true,
+        "threshold": 0.75,
         "next": [
             "home_button"
         ],
