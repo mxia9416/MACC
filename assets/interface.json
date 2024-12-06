@@ -59,15 +59,18 @@
             "entry": "memory_storm",
             "option": [
                 "畸点选择"
-            ]
+            ],
+            "doc": "扫荡上方选择副本的(已开启)最高难度关卡3次！\n如选中的畸点今日[color:red]未开放[/color]，则本任务会自动扫荡正在开放的畸点"
         },
         {
             "name": "扫荡浊暗之阱",
-            "entry": "darkness_well"
+            "entry": "darkness_well",
+            "doc": "默认扫荡[b]乐园幻境[/b]!\n如未开启该副本扫荡,[color:red]不要选择[/color]本任务!"
         },
         {
             "name": "扫荡破碎防线:暗域",
-            "entry": "darkness_zone"
+            "entry": "darkness_zone",
+            "doc": "仅在可扫荡时扫荡!\n如未达到要求，请[color:red]手动攻略[/color]暗域"
         },
         {
             "name": "全体力作战扫荡",
@@ -75,7 +78,7 @@
             "option": [
                 "作战区域"
             ],
-            "pipeline_override": {}
+            "doc": "全体力扫荡上方选择副本的(已开启)最高难度关卡!\n对于[b]帕尔马废墟（职业升阶原质）[/b]:\n如选中的副本今日[color:red]未开放[/color],则本任务会[color:red]放弃扫荡[/color]!"
         },
         {
             "name": "每日/密令奖励",
