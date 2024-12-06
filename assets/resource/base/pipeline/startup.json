@@ -331,10 +331,27 @@
         ],
         "action": "Click",
         "next": [
-            "confirm_mail"
+            "delete_mail"
         ],
         "interrupt": [
             "click_on_mail"
+        ]
+    },
+    "delete_mail": {
+        "recognition": "OCR",
+        "expected": "删除",
+        "roi": [
+            28,
+            620.5,
+            447,
+            82
+        ],
+        "action": "Click",
+        "next": [
+            "confirm_mail"
+        ],
+        "interrupt": [
+            "delete_mail"
         ]
     },
     "confirm_mail": {

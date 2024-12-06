@@ -47,7 +47,6 @@
         ],
         "action": "Click",
         "next": [
-            "Dungeon_not_open",
             "auto_clear_complete",
             "auto_clear_fail"
         ],
