@@ -79,7 +79,10 @@
         },
         {
             "name": "每日/密令奖励",
-            "entry": "battle_pass"
+            "entry": "battle_pass",
+            "option": [
+                "奖励选择"
+            ]
         }
     ],
     "option": {
@@ -87,15 +90,27 @@
             "cases": [
                 {
                     "name": "记忆畸点",
-                    "pipeline_override": {}
+                    "pipeline_override": {
+                        "select_memory_storm": {
+                            "expected": "记忆畸点"
+                        }
+                    }
                 },
                 {
                     "name": "印象畸点",
-                    "pipeline_override": {}
+                    "pipeline_override": {
+                        "select_memory_storm": {
+                            "expected": "印象畸点"
+                        }
+                    }
                 },
                 {
                     "name": "残响畸点",
-                    "pipeline_override": {}
+                    "pipeline_override": {
+                        "select_memory_storm": {
+                            "expected": "残响畸点"
+                        }
+                    }
                 }
             ]
         },
@@ -103,39 +118,113 @@
             "cases": [
                 {
                     "name": "淘金狂热",
-                    "pipeline_override": {}
+                    "pipeline_override": {
+                        "combat_auto_clear": {
+                            "next": "gold"
+                        }
+                    }
                 },
                 {
                     "name": "恶兆之种",
-                    "pipeline_override": {}
+                    "pipeline_override": {
+                        "combat_auto_clear": {
+                            "next": "seed"
+                        }
+                    }
                 },
                 {
                     "name": "禁区探查(技能书)",
-                    "pipeline_override": {}
+                    "pipeline_override": {
+                        "combat_auto_clear": {
+                            "next": "skill"
+                        }
+                    }
                 },
                 {
                     "name": "帕尔马废墟:坚韧",
-                    "pipeline_override": {}
+                    "pipeline_override": {
+                        "combat_auto_clear": {
+                            "next": "talent"
+                        },
+                        "select_talent": {
+                            "expected": "坚韧"
+                        }
+                    }
                 },
                 {
                     "name": "帕尔马废墟:狂暴",
-                    "pipeline_override": {}
+                    "pipeline_override": {
+                        "combat_auto_clear": {
+                            "next": "talent"
+                        },
+                        "select_talent": {
+                            "expected": "狂暴"
+                        }
+                    }
                 },
                 {
                     "name": "帕尔马废墟:诡秘",
-                    "pipeline_override": {}
+                    "pipeline_override": {
+                        "combat_auto_clear": {
+                            "next": "talent"
+                        },
+                        "select_talent": {
+                            "expected": "诡秘"
+                        }
+                    }
                 },
                 {
                     "name": "帕尔马废墟:精准",
-                    "pipeline_override": {}
+                    "pipeline_override": {
+                        "combat_auto_clear": {
+                            "next": "talent"
+                        },
+                        "select_talent": {
+                            "expected": "精准"
+                        }
+                    }
                 },
                 {
                     "name": "帕尔马废墟:异能",
-                    "pipeline_override": {}
+                    "pipeline_override": {
+                        "combat_auto_clear": {
+                            "next": "talent"
+                        },
+                        "select_talent": {
+                            "expected": "异能"
+                        }
+                    }
                 },
                 {
                     "name": "帕尔马废墟:启迪",
-                    "pipeline_override": {}
+                    "pipeline_override": {
+                        "combat_auto_clear": {
+                            "next": "talent"
+                        },
+                        "select_talent": {
+                            "expected": "启迪"
+                        }
+                    }
+                }
+            ]
+        },
+        "奖励选择": {
+            "cases": [
+                {
+                    "name": "监察徽印",
+                    "pipeline_override": {
+                        "select_bp_reward": {
+                            "index": 1
+                        }
+                    }
+                },
+                {
+                    "name": "体力",
+                    "pipeline_override": {
+                        "select_bp_reward": {
+                            "index": 0
+                        }
+                    }
                 }
             ]
         }
