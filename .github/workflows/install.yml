@@ -71,14 +71,24 @@ jobs:
           out-file-path: "deps"
           extract: true
 
+      - name: Download MFAWPF  
+        uses: robinraju/release-downloader@v1  
+        with:
+          repository: SweetSmellFox/MFAWPF
+          fileName: "MFAWPF*"
+          latest: true
+          out-file-path: "MFA"
+          extract: true
+
       - name: Install
         shell: bash
         run: |
           python ./install.py ${{ needs.meta.outputs.tag }}
+          cp MFA/MFAWPF.exe install
 
       - uses: actions/upload-artifact@v4
         with:
-          name: MaaXXX-win-${{ matrix.arch }}
+          name: MACC-win-${{ matrix.arch }}
           path: "install"
 
   ubuntu:
@@ -110,7 +120,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: MaaXXX-linux-${{ matrix.arch }}
+          name: MACC-linux-${{ matrix.arch }}
           path: "install"
 
   macos:
@@ -142,7 +152,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: MaaXXX-macos-${{ matrix.arch }}
+          name: MACC-macos-${{ matrix.arch }}
           path: "install"
 
   android:
@@ -174,7 +184,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: MaaXXX-android-${{ matrix.arch }}
+          name: MACC-android-${{ matrix.arch }}
           path: "install"
 
   release:
@@ -186,10 +196,38 @@ jobs:
         with:
           path: assets
 
-      - run: |
+      - name: Check assets directory
+        run: |
+          ls -la assets
+          if [ -z "$(ls -A assets)" ]; then
+            echo "assets directory is empty"
+            exit 1
+          fi
+
+      - name: Compress and generate checksums
+        run: |
           cd assets
+          echo "Generating checksums for all zip files..."
+          checksum_file="checksums.txt"
+          touch "$checksum_file"
+      
           for f in *; do
-            (cd $f && zip -r ../$f-${{ needs.meta.outputs.tag }}.zip .)
+            if [ -d "$f" ]; then
+              echo "Processing directory: $f"
+              zip_file="$f-${{ needs.meta.outputs.tag }}.zip"
+              (cd "$f" && zip -r "../$zip_file" .)
+              if [ $? -eq 0 ]; then
+                echo "ZIP file created: ../$zip_file"
+                echo "Processing directory: $f"
+                sha256sum "$zip_file" >> "$checksum_file"
+                echo "" >> "$checksum_file"
+              else
+                echo "Failed to create ZIP file: ../$zip_file"
+                exit 1
+              fi
+            else
+              echo "Skipping non-directory: $f"
+            fi
           done
       - uses: softprops/action-gh-release@v2
         with:
