@@ -65,7 +65,7 @@
 - <span style="font-size:25px;">[MFAWPF](https://github.com/SweetSmellFox/MFAWPF)</span>  
 - 由社区大佬[SweetSmellFox](https://github.com/SweetSmellFox)编写的基于WPF的GUI,通过内置的MAAframework来直接控制任务流程  
 - 打开本程序和模拟器后，先在上方选择要控制的模拟器  
-- 勾选想要执行的任务后**启动任务**，任务会顺序执行，***进入游戏***会启动游戏程序，其他任务需要游戏已经为开启状态  
+- 勾选想要执行的任务后**启动任务**，任务会顺序执行，***进入游戏***会启动游戏程序，其他任务需要游戏为开启状态  
 - 点击部分任务右方的设置，可以配置任务属性和查看任务帮助
 ![alt text](GUI.png)
 ![alt text](GUI-2.png)
