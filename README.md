@@ -7,7 +7,7 @@
 
 # MACC
 
-MACC为 **MAA x MBCC**  
+**MAA x MBCC**  
 又可为 **Minos Assistant of Crisis Control**(米诺斯危机管理助手)  
 基于全新架构的 无期迷途 小助手。图像技术 + 模拟控制，解放双手！  
 由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 强力驱动！
