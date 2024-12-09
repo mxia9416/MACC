@@ -51,7 +51,8 @@
         "action": "Click",
         "next": [
             "bp_top_confirm"
-        ]
+        ],
+        "post_wait_freezes": 1000
     },
     "bp_top_confirm": {
         "recognition": "OCR",
