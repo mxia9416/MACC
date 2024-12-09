@@ -62,7 +62,8 @@
             260,
             97
         ],
-        "action": "Click"
+        "action": "Click",
+        "post_wait_freezes": 2000
     },
     "collect_bp_task": {
         "recognition": "OCR",

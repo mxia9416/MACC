@@ -83,10 +83,6 @@
             97
         ],
         "action": "Click",
-        "interrupt": [
-            "find_collectable",
-            "click_on_side"
-        ],
         "post_wait_freezes": 200
     },
     "find_collectable": {
@@ -105,6 +101,6 @@
             0,
             0
         ],
-        "post_wait_freezes": 50
+        "post_wait_freezes": 500
     }
 }

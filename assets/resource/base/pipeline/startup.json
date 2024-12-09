@@ -129,7 +129,7 @@
         "interrupt": [
             "emotion_test"
         ],
-        "post_wait_freezes": 30
+        "post_wait_freezes": 3000
     },
     "emotion_test_complete": {
         "recognition": "OCR",

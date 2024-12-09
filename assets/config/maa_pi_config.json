@@ -1,8 +1,21 @@
 {
     "controller": {
-        "name": "安卓端",
-        "type": "Adb"
+        "name": "安卓端"
     },
     "resource": "官服",
-    "task": []
+    "task": [],
+    "adb": {
+        "adb_path": "E:/leidian/LDPlayer9/adb.exe",
+        "address": "emulator-5554",
+        "config": {
+            "extras": {
+                "ld": {
+                    "enable": true,
+                    "index": 0,
+                    "path": "E:/leidian/LDPlayer9",
+                    "pid": 17756
+                }
+            }
+        }
+    }
 }
