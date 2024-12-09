@@ -55,14 +55,7 @@
             "name": "领取体力",
             "entry": "stamina"
         },
-        {
-            "name": "扫荡记忆风暴",
-            "entry": "memory_storm",
-            "option": [
-                "畸点选择"
-            ],
-            "doc": "扫荡上方选择副本的(已开启)最高难度关卡3次！\n如选中的畸点今日[color:red]未开放[/color]，则本任务会自动扫荡正在开放的畸点"
-        },
+        
         {
             "name": "扫荡浊暗之阱",
             "entry": "darkness_well",
@@ -72,6 +65,14 @@
             "name": "扫荡破碎防线:暗域",
             "entry": "darkness_zone",
             "doc": "仅在可扫荡时扫荡!\n如未达到要求，请[color:red]手动攻略[/color]暗域"
+        },
+        {
+            "name": "扫荡记忆风暴",
+            "entry": "memory_storm",
+            "option": [
+                "畸点选择"
+            ],
+            "doc": "扫荡上方选择副本的(已开启)最高难度关卡3次！\n如选中的畸点今日[color:red]未开放[/color]，则本任务会自动扫荡正在开放的畸点"
         },
         {
             "name": "全体力作战扫荡",
