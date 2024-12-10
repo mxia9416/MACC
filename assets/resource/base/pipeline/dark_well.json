@@ -102,6 +102,7 @@
             76
         ],
         "next": [
+            "back_button",
             "home_button"
         ],
         "interrupt": [

@@ -137,6 +137,7 @@
         ],
         "action": "Click",
         "next": [
+            "back_button",
             "home_button"
         ]
     },
