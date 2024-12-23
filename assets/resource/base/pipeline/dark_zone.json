@@ -21,20 +21,20 @@
             454,
             284
         ],
-        "action": "DoNothing",
+        "action": "Click",
         "next": [
             "check_darkness_zone",
             "end"
         ],
-        "interrupt": []
+        "post_wait_freezes": 500
     },
     "check_darkness_zone": {
         "recognition": "ColorMatch",
         "roi": [
-            853,
-            323,
-            2,
-            2
+            112.73008108206288,
+            525.1758373644689,
+            3.1599750516729594,
+            3.949968814591199
         ],
         "lower": [
             253,
@@ -46,9 +46,8 @@
             210,
             24
         ],
-        "count": 2,
-        "action": "Click",
-        "target": "darkness_zone_tab",
+        "count": 5,
+        "action": "DoNothing",
         "next": [
             "darkness_zone_rewards"
         ]
@@ -101,6 +100,7 @@
             0,
             0
         ],
+        "threshold": 0.9,
         "post_wait_freezes": 500
     }
 }
