@@ -119,7 +119,7 @@
         ],
         "order_by": "Vertical",
         "threshold": 0.85,
-        "post_wait_freezes": 50
+        "post_wait_freezes": 500
     },
     "bp_complete": {
         "recognition": "TemplateMatch",

@@ -73,7 +73,7 @@
     },
     "auto_clear": {
         "recognition": "OCR",
-        "expected": "扫荡",
+        "expected": "开始扫荡",
         "action": "Click",
         "next": [
             "click_on_side"
