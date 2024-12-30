@@ -41,6 +41,7 @@
             "cancel_promotion",
             "emotion_test",
             "cancel_promotion2",
+            "click_on_close",
             "click_on_side"
         ],
         "post_wait_freezes": 5000
@@ -145,6 +146,9 @@
             "collect_emotion_rewards8",
             "collect_emotion_rewards15",
             "collect_emotion_rewards25",
+            "end"
+        ],
+        "interrupt": [
             "click_on_side"
         ]
     },

@@ -9,6 +9,12 @@
         ],
         "post_wait_freezes": 30
     },
+    "click_on_close": {
+        "recognition": "TemplateMatch",
+        "template": "close__1053_130_28_25__1003_80_128_125.png",
+        "action": "Click",
+        "post_wait_freezes": 500
+    },
     "back_button": {
         "recognition": "TemplateMatch",
         "template": "返回__23_16_46_50__0_0_119_116.png",
