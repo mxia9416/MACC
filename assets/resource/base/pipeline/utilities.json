@@ -89,7 +89,8 @@
             767,
             180
         ],
-        "action": "Click"
+        "action": "Click",
+        "post_wait_freezes": 20
     },
     "auto_clear_max": {
         "recognition": "ColorMatch",
@@ -143,8 +144,8 @@
         ],
         "action": "Click",
         "next": [
-            "back_button",
-            "home_button"
+            "home_button",
+            "back_button"
         ]
     },
     "select_difficulty": {

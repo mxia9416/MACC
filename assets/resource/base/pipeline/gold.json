@@ -9,8 +9,8 @@
             "discity_tab",
             "crisis_management2",
             "crisis_management",
-            "home_button",
-            "back_button"
+            "back_button",
+            "home_button"
         ]
     },
     "gold_tab": {
@@ -27,7 +27,10 @@
     },
     "gold_tab_2": {
         "recognition": "OCR",
-        "expected": "淘金狂热",
+        "expected": [
+            "淘金狂热",
+            "淘金狂熱"
+        ],
         "roi": [
             17,
             90.5,

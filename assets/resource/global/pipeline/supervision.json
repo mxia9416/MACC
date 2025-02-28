@@ -1,0 +1,20 @@
+{
+    "skip_button": {
+        "expected": "跳過"
+    },
+    "supervision_tab": {
+        "expected": "管"
+    },
+    "procument_tab": {
+        "expected": "探購部"
+    },
+    "selected_bundle_tab": {
+        "expected": "精選礼包"
+    },
+    "find_free_bundle": {
+        "expected": "每日免费補給"
+    },
+    "purchase_free_bundle": {
+        "expected": "購買"
+    }
+}

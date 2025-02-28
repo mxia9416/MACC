@@ -8,8 +8,8 @@
             "discity_tab",
             "crisis_management2",
             "crisis_management",
-            "home_button",
-            "back_button"
+            "back_button",
+            "home_button"
         ]
     },
     "talent_tab": {
@@ -21,7 +21,8 @@
         ],
         "interrupt": [
             "swipe_up"
-        ]
+        ],
+        "post_wait_freezes": 1000
     },
     "select_talent": {
         "recognition": "OCR",

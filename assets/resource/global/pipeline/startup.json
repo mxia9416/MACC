@@ -1,0 +1,28 @@
+{
+    "startup": {
+        "action": "StartApp",
+        "package": "com.zy.wqmt.global",
+        "next": [
+            "login"
+        ],
+        "interrupt": [
+            "cancel_accouncement",
+            "delay"
+        ]
+    },
+    "login": {
+        "expected": "進入管理局"
+    },
+    "cancel_promotion": {
+        "expected": "今日不再彈出"
+    },
+    "cancel_promotion2": {
+        "expected": "禮包"
+    },
+    "collect_mail": {
+        "expected": "快速處理"
+    },
+    "delete_mail": {
+        "expected": "刪除"
+    }
+}

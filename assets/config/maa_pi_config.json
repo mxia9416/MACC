@@ -1,9 +1,8 @@
 {
+    "resource": "国际繁中",
     "controller": {
         "name": "安卓端"
     },
-    "resource": "官服",
-    "task": [],
     "adb": {
         "adb_path": "E:/leidian/LDPlayer9/adb.exe",
         "address": "emulator-5554",
@@ -13,9 +12,21 @@
                     "enable": true,
                     "index": 0,
                     "path": "E:/leidian/LDPlayer9",
-                    "pid": 47636
+                    "pid": 27472
                 }
             }
         }
-    }
+    },
+    "task": [
+        {
+            "name": "每日/密令奖励",
+            "option": [
+                {
+                    "name": "奖励选择",
+                    "value": "监察徽印"
+                }
+            ],
+            "__vscExpand": true
+        }
+    ]
 }

@@ -21,7 +21,8 @@
             294,
             420
         ],
-        "action": "Click"
+        "action": "Click",
+        "post_wait_freezes": 1000
     },
     "inner_sea_tab": {
         "recognition": "OCR",
@@ -36,7 +37,7 @@
     },
     "darkness_well_tab": {
         "recognition": "OCR",
-        "expected": "浊暗之",
+        "expected": "暗之阱",
         "roi": [
             64,
             319.5,

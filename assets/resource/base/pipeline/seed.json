@@ -9,8 +9,8 @@
             "discity_tab",
             "crisis_management2",
             "crisis_management",
-            "home_button",
-            "back_button"
+            "back_button",
+            "home_button"
         ]
     },
     "seed_tab": {
@@ -27,7 +27,10 @@
     },
     "seed_tab_2": {
         "recognition": "OCR",
-        "expected": "恶兆之种",
+        "expected": [
+            "恶兆之種",
+            "恶兆之种"
+        ],
         "roi": [
             17,
             90.5,

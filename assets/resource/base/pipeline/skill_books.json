@@ -27,7 +27,10 @@
     },
     "skill_tab_2": {
         "recognition": "OCR",
-        "expected": "禁区探查",
+        "expected": [
+            "禁區探查",
+            "禁区探查"
+        ],
         "roi": [
             17,
             90.5,

@@ -1,0 +1,18 @@
+{
+    "crisis_management2": {
+        "expected": "危機管理"
+    },
+    "crisis_management": {
+        "template": "crisis_management_trd_chinese__911_627_76_38__861_577_176_138.png"
+    },
+    "auto_clear": {
+        "expected": [
+            "拂荡",
+            "蕩",
+            "開始"
+        ]
+    },
+    "auto_clear_batch": {
+        "expected": "連續"
+    }
+}

@@ -20,7 +20,7 @@
         {
             "name": "国际繁中",
             "path": [
-                "{PROJECT_DIR}/resource",
+                "{PROJECT_DIR}/resource/base",
                 "{PROJECT_DIR}/resource/global"
             ]
         }
@@ -55,7 +55,6 @@
             "name": "领取体力",
             "entry": "stamina"
         },
-        
         {
             "name": "扫荡浊暗之阱",
             "entry": "darkness_well",
@@ -97,7 +96,10 @@
                     "name": "记忆畸点",
                     "pipeline_override": {
                         "select_memory_storm": {
-                            "expected": "记忆畸点"
+                            "expected": [
+                                "记忆畸点",
+                                "記憶畸點"
+                            ]
                         }
                     }
                 },
@@ -105,7 +107,10 @@
                     "name": "印象畸点",
                     "pipeline_override": {
                         "select_memory_storm": {
-                            "expected": "印象畸点"
+                            "expected": [
+                                "印象畸点",
+                                "印象畸點"
+                            ]
                         }
                     }
                 },
@@ -113,7 +118,10 @@
                     "name": "残响畸点",
                     "pipeline_override": {
                         "select_memory_storm": {
-                            "expected": "残响畸点"
+                            "expected": [
+                                "残响畸点",
+                                "残響畸點"
+                            ]
                         }
                     }
                 }
@@ -152,7 +160,11 @@
                             "next": "talent"
                         },
                         "select_talent": {
-                            "expected": "坚韧"
+                            "expected": [
+                                "坚韧",
+                                "堅韌",
+                                "勒"
+                            ]
                         }
                     }
                 },
@@ -174,7 +186,10 @@
                             "next": "talent"
                         },
                         "select_talent": {
-                            "expected": "诡秘"
+                            "expected": [
+                                "秘",
+                                "诡秘"
+                            ]
                         }
                     }
                 },
@@ -185,7 +200,10 @@
                             "next": "talent"
                         },
                         "select_talent": {
-                            "expected": "精准"
+                            "expected": [
+                                "精准",
+                                "精"
+                            ]
                         }
                     }
                 },
@@ -196,7 +214,10 @@
                             "next": "talent"
                         },
                         "select_talent": {
-                            "expected": "异能"
+                            "expected": [
+                                "巽能",
+                                "异能"
+                            ]
                         }
                     }
                 },
@@ -207,7 +228,10 @@
                             "next": "talent"
                         },
                         "select_talent": {
-                            "expected": "启迪"
+                            "expected": [
+                                "啟迪",
+                                "启迪"
+                            ]
                         }
                     }
                 }

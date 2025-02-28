@@ -186,7 +186,8 @@
         ],
         "next": [
             "click_on_side"
-        ]
+        ],
+        "post_wait_freezes": 1000
     },
     "collect_emotion_rewards8": {
         "recognition": "OCR",

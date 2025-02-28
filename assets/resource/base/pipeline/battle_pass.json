@@ -68,7 +68,11 @@
     },
     "collect_bp_task": {
         "recognition": "OCR",
-        "expected": "一键领取",
+        "expected": [
+            "一领取",
+            "一键领取",
+            "一取"
+        ],
         "roi": [
             669,
             542.5,
