@@ -24,5 +24,26 @@
     },
     "delete_mail": {
         "expected": "刪除"
+    },
+    "startup_finish": {
+        "recognition": "ColorMatch",
+        "roi": [
+            850,
+            32,
+            7,
+            6
+        ],
+        "lower": [
+            0,
+            20,
+            170
+        ],
+        "upper": [
+            10,
+            50,
+            200
+        ],
+        "count": 20,
+        "pre_wait_freezes": 2000
     }
 }

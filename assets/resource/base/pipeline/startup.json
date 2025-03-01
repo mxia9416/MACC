@@ -110,7 +110,10 @@
     },
     "emotion_test": {
         "recognition": "OCR",
-        "expected": "检测",
+        "expected": [
+            "检測",
+            "检测"
+        ],
         "roi": [
             509,
             23.5,
