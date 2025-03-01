@@ -33,6 +33,7 @@
         "action": "Click",
         "next": [
             "mail",
+            "startup_finish2",
             "startup_finish"
         ],
         "interrupt": [
@@ -411,5 +412,26 @@
             255
         ],
         "count": 20
+    },
+    "startup_finish2": {
+        "recognition": "ColorMatch",
+        "roi": [
+            850,
+            32,
+            7,
+            6
+        ],
+        "lower": [
+            0,
+            20,
+            170
+        ],
+        "upper": [
+            10,
+            50,
+            200
+        ],
+        "count": 20,
+        "pre_wait_freezes": 2000
     }
 }
