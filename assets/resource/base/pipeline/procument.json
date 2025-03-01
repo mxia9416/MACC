@@ -12,7 +12,10 @@
     },
     "procument_tab": {
         "recognition": "OCR",
-        "expected": "采购办",
+        "expected": [
+            "探購部",
+            "采购办"
+        ],
         "roi": [
             938,
             254.5,
