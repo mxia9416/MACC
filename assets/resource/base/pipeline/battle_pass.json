@@ -49,7 +49,7 @@
             64
         ],
         "action": "Click",
-        "next": [
+        "interrupt": [
             "bp_top_confirm"
         ],
         "post_wait_freezes": 1000
@@ -146,12 +146,18 @@
     },
     "select_bp_reward": {
         "recognition": "OCR",
-        "expected": "选择",
+        "expected": [
+            "选择",
+            "選選"
+        ],
         "roi": [
             353,
             370.5,
             574,
             189
+        ],
+        "interrupt": [
+            "select_bp_reward"
         ],
         "action": "Click",
         "order_by": "Horizontal",

@@ -131,7 +131,8 @@
         "interrupt": [
             "click_on_side"
         ],
-        "post_wait_freezes": 50
+        "post_wait_freezes": 50,
+        "pre_wait_freezes": 50
     },
     "next_sinner": {
         "recognition": "OCR",
