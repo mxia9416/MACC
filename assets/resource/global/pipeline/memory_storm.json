@@ -1,6 +1,9 @@
 {
     "rust_river_tab": {
-        "expected": "镛河"
+        "expected": [
+            "铺河",
+            "镛河"
+        ]
     },
     "memory_storm_tab": {
         "expected": "記憶風暴"

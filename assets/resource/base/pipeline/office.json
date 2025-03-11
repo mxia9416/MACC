@@ -85,13 +85,13 @@
         ]
     },
     "dispatch_complete": {
-        "recognition": "OCR",
-        "expected": "3",
+        "recognition": "TemplateMatch",
+        "template": "dispatch_complete__1112_420_138_90__1062_370_218_190.png",
         "roi": [
-            1110,
-            424.5,
-            47,
-            75
+            980,
+            392,
+            296,
+            227
         ]
     },
     "start_stamina": {

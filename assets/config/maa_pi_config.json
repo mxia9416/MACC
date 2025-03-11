@@ -12,15 +12,9 @@
                     "enable": true,
                     "index": 0,
                     "path": "E:/leidian/LDPlayer9",
-                    "pid": 39108
+                    "pid": 50076
                 }
             }
         }
-    },
-    "task": [
-        {
-            "name": "每日/密令奖励",
-            "option": []
-        }
-    ]
+    }
 }
