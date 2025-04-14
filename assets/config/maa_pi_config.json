@@ -12,9 +12,15 @@
                     "enable": true,
                     "index": 0,
                     "path": "E:/leidian/LDPlayer9",
-                    "pid": 50076
+                    "pid": 47540
                 }
             }
         }
-    }
+    },
+    "task": [
+        {
+            "name": "进入游戏",
+            "option": []
+        }
+    ]
 }
