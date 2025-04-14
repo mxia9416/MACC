@@ -82,6 +82,7 @@
             97
         ],
         "action": "Click",
+        "pre_wait_freezes": 200,
         "post_wait_freezes": 200
     },
     "find_collectable": {
