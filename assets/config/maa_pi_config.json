@@ -1,5 +1,5 @@
 {
-    "resource": "官服",
+    "resource": "国际繁中",
     "controller": {
         "name": "安卓端"
     },
@@ -19,8 +19,9 @@
     },
     "task": [
         {
-            "name": "采购办免费礼包",
-            "option": []
+            "name": "扫荡记忆风暴",
+            "option": [],
+            "__vscExpand": true
         }
     ]
 }
