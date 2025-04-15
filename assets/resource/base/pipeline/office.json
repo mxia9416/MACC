@@ -85,8 +85,8 @@
         ]
     },
     "dispatch_complete": {
-        "recognition": "TemplateMatch",
-        "template": "dispatch_complete__1112_420_138_90__1062_370_218_190.png",
+        "recognition": "OCR",
+        "expected": "3/3",
         "roi": [
             980,
             392,

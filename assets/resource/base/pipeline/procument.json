@@ -32,7 +32,32 @@
     },
     "selected_bundle_tab": {
         "recognition": "OCR",
-        "expected": "精选礼包",
+        "expected": [
+            "精选礼包",
+            "禮包",
+            "礼包"
+        ],
+        "roi": [
+            9,
+            97.5,
+            299,
+            620
+        ],
+        "action": "Click",
+        "next": [
+            "find_free_bundle_tab",
+            "find_free_bundle"
+        ],
+        "interrupt": [
+            "swipe_left"
+        ],
+        "post_delay": 2000
+    },
+    "find_free_bundle_tab": {
+        "recognition": "OCR",
+        "expected": [
+            "常规"
+        ],
         "roi": [
             9,
             97.5,
@@ -45,7 +70,8 @@
         ],
         "interrupt": [
             "swipe_left"
-        ]
+        ],
+        "post_delay": 2000
     },
     "find_free_bundle": {
         "recognition": "OCR",
