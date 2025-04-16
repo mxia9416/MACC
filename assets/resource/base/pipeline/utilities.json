@@ -150,7 +150,10 @@
     },
     "select_difficulty": {
         "recognition": "OCR",
-        "expected": "MS",
+        "expected": [
+            "MS",
+            "已完成"
+        ],
         "roi": [
             358,
             421.5,

@@ -45,7 +45,7 @@
             "click_on_close",
             "click_on_side"
         ],
-        "post_delay": 10000
+        "post_delay": 20000
     },
     "disconnect": {
         "recognition": "OCR",
