@@ -174,7 +174,8 @@
         ],
         "interrupt": [
             "click_on_side"
-        ]
+        ],
+        "pre_wait_freezes": 500
     },
     "emotion_reward_complete2": {
         "recognition": "TemplateMatch",
@@ -185,6 +186,7 @@
             64,
             69
         ],
+        "threshold": 0.6,
         "next": [
             "click_on_side"
         ],
@@ -211,7 +213,8 @@
         ],
         "interrupt": [
             "click_on_side"
-        ]
+        ],
+        "pre_wait_freezes": 500
     },
     "emotion_reward_complete8": {
         "recognition": "TemplateMatch",
@@ -222,9 +225,11 @@
             51,
             56
         ],
+        "threshold": 0.6,
         "next": [
             "click_on_side"
-        ]
+        ],
+        "pre_wait_freezes": 500
     },
     "collect_emotion_rewards15": {
         "recognition": "OCR",
@@ -247,7 +252,8 @@
         ],
         "interrupt": [
             "click_on_side"
-        ]
+        ],
+        "pre_wait_freezes": 500
     },
     "emotion_reward_complete15": {
         "recognition": "TemplateMatch",
@@ -258,10 +264,11 @@
             66,
             63
         ],
+        "threshold": 0.6,
         "next": [
             "click_on_side"
         ],
-        "post_wait_freezes": 50
+        "post_wait_freezes": 500
     },
     "collect_emotion_rewards25": {
         "recognition": "OCR",
@@ -284,7 +291,8 @@
         ],
         "interrupt": [
             "click_on_side"
-        ]
+        ],
+        "pre_wait_freezes": 500
     },
     "emotion_reward_complete25": {
         "recognition": "TemplateMatch",
@@ -295,9 +303,11 @@
             59,
             59
         ],
+        "threshold": 0.6,
         "next": [
             "click_on_side"
-        ]
+        ],
+        "pre_wait_freezes": 500
     },
     "mail": {
         "recognition": "ColorMatch",

@@ -35,6 +35,7 @@
             "find_collectable_bp_then_back",
             "find_collectable_bp",
             "select_bp_reward",
+            "bp_top_confirm",
             "click_on_side"
         ],
         "post_wait_freezes": 100
@@ -48,10 +49,8 @@
             165,
             64
         ],
+        "threshold": 0.5,
         "action": "Click",
-        "interrupt": [
-            "bp_top_confirm"
-        ],
         "post_wait_freezes": 1000
     },
     "bp_top_confirm": {
@@ -141,6 +140,7 @@
             "home_button"
         ],
         "interrupt": [
+            "select_bp_reward",
             "click_on_side"
         ]
     },
@@ -162,7 +162,7 @@
         "action": "Click",
         "order_by": "Horizontal",
         "index": 1,
-        "threshold": 0.85,
+        "threshold": 0.6,
         "post_wait_freezes": 50
     }
 }

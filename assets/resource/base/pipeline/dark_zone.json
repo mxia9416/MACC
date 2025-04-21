@@ -70,7 +70,8 @@
             "collect_darkness_zone_rewards",
             "find_collectable",
             "click_on_side"
-        ]
+        ],
+        "post_wait_freezes": 500
     },
     "collect_darkness_zone_rewards": {
         "recognition": "OCR",

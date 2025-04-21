@@ -30,10 +30,10 @@
         "recognition": "OCR",
         "expected": "捐赠",
         "roi": [
-            810,
-            505.5,
-            224,
-            214.5
+            670,
+            539,
+            593,
+            163
         ],
         "action": "Click",
         "next": [

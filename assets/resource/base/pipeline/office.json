@@ -81,7 +81,8 @@
             "dispatch_complete"
         ],
         "interrupt": [
-            "send_dispatch"
+            "send_dispatch",
+            "click_on_side"
         ]
     },
     "dispatch_complete": {

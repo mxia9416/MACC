@@ -64,6 +64,8 @@
             299,
             620
         ],
+        "index": 0,
+        "order_by": "Vertical",
         "action": "Click",
         "next": [
             "find_free_bundle"

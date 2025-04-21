@@ -73,7 +73,13 @@
     },
     "auto_clear": {
         "recognition": "OCR",
-        "expected": "开始扫荡",
+        "expected": "扫荡",
+        "roi": [
+            6,
+            383,
+            1272,
+            338
+        ],
         "action": "Click",
         "next": [
             "click_on_side"
