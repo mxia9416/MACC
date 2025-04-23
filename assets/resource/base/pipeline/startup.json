@@ -188,9 +188,6 @@
             69
         ],
         "threshold": 0.6,
-        "next": [
-            "click_on_side"
-        ],
         "post_wait_freezes": 1000
     },
     "collect_emotion_rewards8": {
@@ -228,9 +225,6 @@
             56
         ],
         "threshold": 0.6,
-        "next": [
-            "click_on_side"
-        ],
         "pre_wait_freezes": 200,
         "post_wait_freezes": 500
     },
@@ -269,9 +263,6 @@
             63
         ],
         "threshold": 0.6,
-        "next": [
-            "click_on_side"
-        ],
         "pre_wait_freezes": 200,
         "post_wait_freezes": 500
     },
@@ -310,9 +301,6 @@
             59
         ],
         "threshold": 0.6,
-        "next": [
-            "click_on_side"
-        ],
         "pre_wait_freezes": 200,
         "post_wait_freezes": 500
     },
