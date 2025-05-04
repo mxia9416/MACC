@@ -76,10 +76,22 @@ def install_agent():
         dirs_exist_ok=True,
     )
 
+def setup_python():
+    if sys.platform.startswith("win"):
+
+        with open(install_path / "interface.json", "r", encoding="utf-8") as f:
+            interface = json.load(f)
+
+        interface["agent"]["child_exec"] = r"{PROJECT_DIR}/python/python.exe"
+
+        with open(install_path / "interface.json", "w", encoding="utf-8") as f:
+            json.dump(interface, f, ensure_ascii=False, indent=4)
+
 if __name__ == "__main__":
     install_deps()
     install_resource()
     install_chores()
     install_agent()
+    setup_python()
 
     print(f"Install to {install_path} successfully.")

@@ -51,11 +51,11 @@ jobs:
 
   install:
     needs: meta
-    runs-on: macos-latest
+    runs-on: windows-latest
     strategy:
       matrix:
-        os: [win, osx, linux]
-        arch: [arm64, x64]
+        os: [win, macos, linux]
+        arch: [x86_64, aarch64]
       fail-fast: false
 
     steps:
@@ -67,17 +67,46 @@ jobs:
         uses: robinraju/release-downloader@v1
         with:
           repository: MaaXYZ/MaaFramework
-          fileName: "MAA-win-${{ matrix.arch }}*"
+          fileName: "MAA-${{ matrix.os }}-${{ matrix.arch }}*"
           latest: true
           preRelease: false
           out-file-path: "deps"
-          extract: true    
+          extract: true
 
-      - name: Install
+      - name: Setup Embed Python
+        shell: powershell
+        run: |
+          ./ci/setup_embed_python.ps1
+        
+      - name: Install Python
         shell: bash
+        env:
+          TARGET_OS: ${{ matrix.os }}
         run: |
           python ./install.py ${{ needs.meta.outputs.tag }}
-
+        
+      - name: Set up MFAAvalonia naming
+        id: mfa_naming
+        shell: bash
+        run: |
+          if [ "${{ matrix.os }}" = "win" ]; then
+            echo "mfa_os=win" >> $GITHUB_OUTPUT
+          elif [ "${{ matrix.os }}" = "macos" ]; then
+            echo "mfa_os=osx" >> $GITHUB_OUTPUT
+          elif [ "${{ matrix.os }}" = "linux" ]; then
+            echo "mfa_os=linux" >> $GITHUB_OUTPUT
+          else
+            echo "mfa_os=unknown" >> $GITHUB_OUTPUT
+          fi
+          
+          if [ "${{ matrix.arch }}" = "x86_64" ]; then
+            echo "mfa_arch=x64" >> $GITHUB_OUTPUT
+          elif [ "${{ matrix.arch }}" = "aarch64" ]; then
+            echo "mfa_arch=arm64" >> $GITHUB_OUTPUT
+          else
+            echo "mfa_arch=unknown" >> $GITHUB_OUTPUT
+          fi
+        
       - name: Download MFA
         if: ${{ matrix.os != 'android' }}
         uses: robinraju/release-downloader@v1
@@ -97,7 +126,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: MaaXXX-${{ matrix.os }}-${{ matrix.arch }}
+          name: MACC-${{ matrix.os }}-${{ matrix.arch }}
           path: "install"
 
   release:
