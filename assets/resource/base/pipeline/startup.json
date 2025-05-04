@@ -131,9 +131,6 @@
         "next": [
             "emotion_test_complete"
         ],
-        "interrupt": [
-            "emotion_test"
-        ],
         "post_wait_freezes": 3000
     },
     "emotion_test_complete": {
@@ -146,10 +143,10 @@
             472
         ],
         "next": [
-            "collect_emotion_rewards2",
+            "collect_emotion_rewards25",
             "collect_emotion_rewards8",
             "collect_emotion_rewards15",
-            "collect_emotion_rewards25",
+            "collect_emotion_rewards2",
             "click_on_side"
         ]
     },
