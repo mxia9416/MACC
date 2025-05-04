@@ -5,7 +5,7 @@ $PythonVersion = "3.12.9"
 $Architecture = "amd64" # 可选 "win32"
 $DestDir = "install/python"
 $ScriptsDir = ""  # 存放准备好的文件的目录
-
+ 
 # 创建目标目录
 if (-not (Test-Path $DestDir)) {
     New-Item -ItemType Directory -Path $DestDir | Out-Null
