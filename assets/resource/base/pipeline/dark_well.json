@@ -1,10 +1,9 @@
 {
     "darkness_well": {
         "next": [
-            "darkness_well_tab"
+            "inner_sea_tab"
         ],
         "interrupt": [
-            "inner_sea_tab",
             "discity_tab",
             "crisis_management2",
             "crisis_management",
@@ -14,7 +13,7 @@
     },
     "discity_tab": {
         "recognition": "OCR",
-        "expected": "狄斯城",
+        "expected": "狄斯",
         "roi": [
             972,
             102.5,
@@ -33,17 +32,15 @@
             1126,
             159
         ],
+        "next": "darkness_well_tab",
+        "interrupt": [
+            "swipe_left"
+        ],
         "action": "Click"
     },
     "darkness_well_tab": {
         "recognition": "OCR",
         "expected": "暗之阱",
-        "roi": [
-            64,
-            319.5,
-            346,
-            185
-        ],
         "action": "Click",
         "next": [
             "paradise_phantasm"

@@ -38,7 +38,7 @@
             "bp_top_confirm",
             "click_on_side"
         ],
-        "post_wait_freezes": 100
+        "post_wait_freezes": 2000
     },
     "collect_bp_weekly_top": {
         "recognition": "TemplateMatch",

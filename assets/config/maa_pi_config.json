@@ -1,5 +1,5 @@
 {
-    "resource": "国际繁中",
+    "resource": "官服",
     "controller": {
         "name": "安卓端"
     },
@@ -12,14 +12,14 @@
                     "enable": true,
                     "index": 0,
                     "path": "E:/leidian/LDPlayer9",
-                    "pid": 46276
+                    "pid": 9584
                 }
             }
         }
     },
     "task": [
         {
-            "name": "进入游戏",
+            "name": "每日/密令奖励",
             "option": []
         }
     ]

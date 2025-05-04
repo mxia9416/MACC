@@ -1,0 +1,52 @@
+{
+    "reconstruction": {
+        "next": [
+            "recon_tab_2"
+        ],
+        "interrupt": [
+            "recon_tab",
+            "rust_river_tab",
+            "discity_tab",
+            "crisis_management2",
+            "crisis_management",
+            "home_button",
+            "back_button"
+        ]
+    },
+    "recon_tab": {
+        "recognition": "TemplateMatch",
+        "template": "reconstruction__662_267_73_78__612_217_173_178.png",
+        "roi": [
+            506,
+            220,
+            313,
+            196
+        ],
+        "action": "Click",
+        "post_wait_freezes": 1
+    },
+    "recon_tab_2": {
+        "recognition": "OCR",
+        "expected": [
+            "搜寻"
+        ],
+        "roi": [
+            17,
+            90.5,
+            341,
+            361
+        ],
+        "action": "Click",
+        "interrupt": [
+            "select_difficulty",
+            "auto_clear_batch",
+            "auto_clear_max",
+            "auto_clear"
+        ],
+        "next": [
+            "auto_clear_complete",
+            "auto_clear_fail"
+        ],
+        "post_wait_freezes": 1
+    }
+}
