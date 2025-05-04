@@ -3,7 +3,7 @@ name: install
 on:
   push:
     tags:
-      - "v*"
+      - "dev*"
     branches:
       - "**"
     paths:
@@ -62,6 +62,16 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: true
+      
+      - name: Download MaaFramework
+        uses: robinraju/release-downloader@v1
+        with:
+          repository: MaaXYZ/MaaFramework
+          fileName: "MAA-win-${{ matrix.arch }}*"
+          latest: true
+          preRelease: true
+          out-file-path: "deps"
+          extract: true    
 
       - name: Install
         shell: bash
