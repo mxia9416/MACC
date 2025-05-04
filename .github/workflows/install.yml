@@ -69,7 +69,7 @@ jobs:
           repository: MaaXYZ/MaaFramework
           fileName: "MAA-win-${{ matrix.arch }}*"
           latest: true
-          preRelease: true
+          preRelease: false
           out-file-path: "deps"
           extract: true    
 
