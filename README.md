@@ -42,13 +42,13 @@
 
 - 对于绝大部分用户，请下载 `MACC-win-x86_64.zip`
 - 若确定自己的电脑是 arm 架构，请下载 `MACC-win-aarch64.zip`  
-  _请注意！Windows 的电脑几乎全都是 x86_64 的，可能占 99.999%，除非你非常确定自己是 arm，否则别下这个！_
+  请注意！Windows 的电脑几乎全都是 x86_64 的，可能占 99.999%，除非你非常确定自己是 arm，否则别下这个！_
 - 解压后运行 `MFAAvalonia.exe`（图形化界面，推荐使用，老版本UI为`MFAWPF.exe`）或 `MaaPiCli.exe`（命令行）即可
 
 ### macOS
 
-- 若使用 Intel 处理器，请下载 `MACC-macos-x86_64-vXXX.zip`
-- 若使用 M1, M2 等 arm 处理器，请下载 `MACC-macos-aarch64-vXXX.zip`
+- 若使用 Intel 处理器，请下载 `MACC-macos-x86_64.zip`
+- 若使用 M1, M2 等 arm 处理器，请下载 `MACC-macos-aarch64.zip`
 - 使用方式：
 
   ```bash
@@ -62,10 +62,10 @@
 
 ## 图形化界面
 
-- <span style="font-size:25px;">[MFAWPF](https://github.com/SweetSmellFox/MFAWPF)</span>  
-- 由社区大佬[SweetSmellFox](https://github.com/SweetSmellFox)编写的基于WPF的GUI,通过内置的MAAframework来直接控制任务流程  
-- 打开本程序和模拟器后，先在上方选择要控制的模拟器  
-- 勾选想要执行的任务后**启动任务**，任务会顺序执行，***进入游戏***会启动游戏程序，其他任务需要游戏为开启状态  
+- <span style="font-size:25px;">[MFAAvalonia](https://github.com/SweetSmellFox/MFAAvalonia/)</span>  
+- 由社区大佬[SweetSmellFox](https://github.com/SweetSmellFox)编写的基于Avalonia的GUI,通过内置的MAAframework来直接控制任务流程  
+- 打开本程序和模拟器后，先在右上方选择要控制的模拟器  
+- 勾选想要执行的任务后**开始任务**，任务会顺序执行，***进入游戏***会启动游戏程序，其他任务需要游戏为开启状态  
 - 点击部分任务右方的设置，可以配置任务属性和查看任务帮助
 ![alt text](GUI.png)
 ![alt text](GUI-2.png)
@@ -108,4 +108,4 @@
 
 ## 鸣谢
 
-本项目由 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 强力驱动！ 
+本项目由 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 强力驱动！
