@@ -112,7 +112,7 @@ jobs:
         uses: robinraju/release-downloader@v1
         with:
           repository: SweetSmellFox/MFAAvalonia
-          fileName: "MFAAvalonia-*-${{ matrix.os }}-${{ matrix.arch }}*"
+          fileName: "MFAAvalonia-*${{ steps.mfa_naming.outputs.mfa_os }}-${{ steps.mfa_naming.outputs.mfa_arch }}*"
           latest: true
           out-file-path: "MFAAvalonia"
           extract: true
