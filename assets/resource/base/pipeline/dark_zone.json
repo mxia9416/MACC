@@ -1,10 +1,9 @@
 {
     "darkness_zone": {
         "next": [
-            "darkness_zone_tab"
+            "inner_sea_tab_2"
         ],
         "interrupt": [
-            "inner_sea_tab",
             "discity_tab",
             "crisis_management2",
             "crisis_management",
@@ -12,15 +11,37 @@
             "back_button"
         ]
     },
+    "inner_sea_tab_2": {
+        "recognition": "OCR",
+        "expected": "内海",
+        "roi": [
+            114,
+            566.5,
+            1126,
+            159
+        ],
+        "next": "darkness_zone_tab",
+        "interrupt": [
+            "data_crevice",
+            "eternal_nightmare"
+        ],
+        "action": "Click"
+    },
+    "data_crevice": {
+        "recognition": "OCR",
+        "expected": "数据间隙",
+        "next": "swipe_left",
+        "action": "DoNothing"
+    },
+    "eternal_nightmare": {
+        "recognition": "OCR",
+        "expected": "无尽梦",
+        "next": "swipe_right",
+        "action": "DoNothing"
+    },
     "darkness_zone_tab": {
         "recognition": "OCR",
         "expected": "破碎防线",
-        "roi": [
-            564,
-            251.5,
-            454,
-            284
-        ],
         "action": "Click",
         "next": [
             "check_darkness_zone",

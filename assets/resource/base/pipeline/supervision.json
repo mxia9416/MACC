@@ -144,6 +144,7 @@
             138
         ],
         "action": "Click",
+        "interrupt": "click_on_side",
         "next": [
             "skip_button"
         ],

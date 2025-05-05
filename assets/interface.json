@@ -154,6 +154,14 @@
                     }
                 },
                 {
+                    "name": "极域搜寻(重构材料)",
+                    "pipeline_override": {
+                        "combat_auto_clear": {
+                            "next": "reconstruction"
+                        }
+                    }
+                },
+                {
                     "name": "帕尔马废墟:坚韧",
                     "pipeline_override": {
                         "combat_auto_clear": {

@@ -32,7 +32,6 @@
         "expected": "进入管理局",
         "action": "Click",
         "next": [
-            "mail",
             "startup_finish",
             "startup_finish2"
         ],
@@ -45,7 +44,8 @@
             "click_on_close",
             "click_on_side"
         ],
-        "post_delay": 20000
+        "post_delay": 20000,
+        "post_wait_freezes": 5000
     },
     "disconnect": {
         "recognition": "OCR",
@@ -300,97 +300,6 @@
         "threshold": 0.6,
         "pre_wait_freezes": 200,
         "post_wait_freezes": 500
-    },
-    "mail": {
-        "recognition": "ColorMatch",
-        "roi": [
-            133,
-            414,
-            3,
-            3
-        ],
-        "lower": [
-            250,
-            205,
-            19
-        ],
-        "upper": [
-            255,
-            220,
-            25
-        ],
-        "action": "Click",
-        "target": [
-            39,
-            415.5,
-            87,
-            36
-        ],
-        "next": [
-            "collect_mail"
-        ],
-        "post_wait_freezes": 1500
-    },
-    "collect_mail": {
-        "recognition": "OCR",
-        "expected": "快速处理",
-        "roi": [
-            28,
-            624.5,
-            443,
-            82
-        ],
-        "action": "Click",
-        "next": [
-            "delete_mail"
-        ],
-        "interrupt": [
-            "click_on_mail"
-        ]
-    },
-    "delete_mail": {
-        "recognition": "OCR",
-        "expected": "删除",
-        "roi": [
-            28,
-            620.5,
-            447,
-            82
-        ],
-        "action": "Click",
-        "next": [
-            "confirm_mail"
-        ],
-        "interrupt": [
-            "delete_mail"
-        ]
-    },
-    "confirm_mail": {
-        "recognition": "ColorMatch",
-        "roi": [
-            279,
-            652.5,
-            25,
-            23
-        ],
-        "lower": [
-            79,
-            79,
-            80
-        ],
-        "upper": [
-            81,
-            82,
-            85
-        ],
-        "count": 100,
-        "next": [
-            "home_button"
-        ]
-    },
-    "click_on_mail": {
-        "action": "Click",
-        "target": "collect_mail"
     },
     "startup_finish": {
         "recognition": "ColorMatch",

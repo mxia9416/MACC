@@ -15,23 +15,23 @@
 
 ## 碎碎念
 
-- 借国服UI改版之际，基于MAA重构编写了之前自用的无期迷途每日自动化脚本（autohotkey）
-- ***<span style="font-size:15px;">作者主玩繁中国际服,本次为借号编写，测试功能和情景有限（比如没有测试新UI皮肤）如遇到bug欢迎带日志和截图提交issue~ </span>***
-- 国际服更新UI后会更新繁中版，其他语言暂无支持计划
+- 借国服UI改版之际，基于MAA重构编写了之前自用的无期迷途每日自动化脚本
+- ***<span style="font-size:15px;">作者主玩繁中国际服,国服为借号编写，测试功能和情景有限（比如没有测试新UI皮肤）如遇到bug欢迎带日志和截图提交issue~ </span>***
+- 国际服支持繁中版，其他语言暂无支持计划
 - 随缘维护/升级功能，咕咕。。。
 
 ## 功能介绍
 
 目前已有的功能：
 
-- 启动游戏:<br>消除广告/领取邮件/禁闭者情绪检测及奖励领取
+- 启动游戏:<br>消除广告/禁闭者情绪检测/奖励领取
 - 秘盟捐赠
 - 好友点数
 - 监管奖励
 - 领取免费礼包
 - 一键派遣
 - 领取体力
-- 扫荡作战:<br> 记忆风暴/浊暗之阱/暗域/淘金狂热/恶兆之种/禁区探查/帕尔马废墟
+- 扫荡作战:<br> 记忆风暴/浊暗之阱/暗域/淘金狂热/恶兆之种/极域搜寻/禁区探查/帕尔马废墟
 - 领取监察密令奖励
 
 ## 使用说明
@@ -40,15 +40,15 @@
 
 ### Windows
 
-- 对于绝大部分用户，请下载 `MACC-win-x86_64-vXXX.zip`
-- 若确定自己的电脑是 arm 架构，请下载 `MACC-win-aarch64-vXXX.zip`  
-  _请注意！Windows 的电脑几乎全都是 x86_64 的，可能占 99.999%，除非你非常确定自己是 arm，否则别下这个！_
-- 解压后运行 `MFAWPF.exe`（图形化界面，推荐使用）或 `MaaPiCli.exe`（命令行）即可
+- 对于绝大部分用户，请下载 `MACC-win-x86_64.zip`
+- 若确定自己的电脑是 arm 架构，请下载 `MACC-win-aarch64.zip`  
+  请注意！Windows 的电脑几乎全都是 x86_64 的，可能占 99.999%，除非你非常确定自己是 arm，否则别下这个！_
+- 解压后运行 `MFAAvalonia.exe`（图形化界面，推荐使用，老版本UI为`MFAWPF.exe`）或 `MaaPiCli.exe`（命令行）即可
 
 ### macOS
 
-- 若使用 Intel 处理器，请下载 `MACC-macos-x86_64-vXXX.zip`
-- 若使用 M1, M2 等 arm 处理器，请下载 `MACC-macos-aarch64-vXXX.zip`
+- 若使用 Intel 处理器，请下载 `MACC-macos-x86_64.zip`
+- 若使用 M1, M2 等 arm 处理器，请下载 `MACC-macos-aarch64.zip`
 - 使用方式：
 
   ```bash
@@ -62,10 +62,10 @@
 
 ## 图形化界面
 
-- <span style="font-size:25px;">[MFAWPF](https://github.com/SweetSmellFox/MFAWPF)</span>  
-- 由社区大佬[SweetSmellFox](https://github.com/SweetSmellFox)编写的基于WPF的GUI,通过内置的MAAframework来直接控制任务流程  
-- 打开本程序和模拟器后，先在上方选择要控制的模拟器  
-- 勾选想要执行的任务后**启动任务**，任务会顺序执行，***进入游戏***会启动游戏程序，其他任务需要游戏为开启状态  
+- <span style="font-size:25px;">[MFAAvalonia](https://github.com/SweetSmellFox/MFAAvalonia/)</span>  
+- 由社区大佬[SweetSmellFox](https://github.com/SweetSmellFox)编写的基于Avalonia的GUI,通过内置的MAAframework来直接控制任务流程  
+- 打开本程序和模拟器后，先在右上方选择要控制的模拟器  
+- 勾选想要执行的任务后**开始任务**，任务会顺序执行，***进入游戏***会启动游戏程序，其他任务需要游戏为开启状态  
 - 点击部分任务右方的设置，可以配置任务属性和查看任务帮助
 ![alt text](GUI.png)
 ![alt text](GUI-2.png)
@@ -108,4 +108,4 @@
 
 ## 鸣谢
 
-本项目由 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 强力驱动！ 
+本项目由 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 强力驱动！

@@ -3,6 +3,12 @@
     "controller": {
         "name": "安卓端"
     },
+    "task": [
+        {
+            "name": "每日/密令奖励",
+            "option": []
+        }
+    ],
     "adb": {
         "adb_path": "E:/leidian/LDPlayer9/adb.exe",
         "address": "emulator-5554",
@@ -12,15 +18,9 @@
                     "enable": true,
                     "index": 0,
                     "path": "E:/leidian/LDPlayer9",
-                    "pid": 46276
+                    "pid": 52156
                 }
             }
         }
-    },
-    "task": [
-        {
-            "name": "进入游戏",
-            "option": []
-        }
-    ]
+    }
 }

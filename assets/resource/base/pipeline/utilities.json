@@ -55,6 +55,22 @@
         ],
         "post_wait_freezes": 20
     },
+    "swipe_right": {
+        "action": "Swipe",
+        "end": [
+            1090,
+            372,
+            1,
+            1
+        ],
+        "begin": [
+            800,
+            369,
+            1,
+            1
+        ],
+        "post_wait_freezes": 20
+    },
     "swipe_up": {
         "action": "Swipe",
         "begin": [
