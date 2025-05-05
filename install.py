@@ -89,6 +89,6 @@ if __name__ == "__main__":
     install_resource()
     install_chores()
     install_agent()
-    setup_python()
+    #setup_python()
 
     print(f"Install to {install_path} successfully.")

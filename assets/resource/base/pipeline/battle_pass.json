@@ -30,12 +30,12 @@
             "bp_complete"
         ],
         "interrupt": [
+            "bp_top_confirm",
             "collect_bp_weekly_top",
             "collect_bp_task",
             "find_collectable_bp_then_back",
             "find_collectable_bp",
             "select_bp_reward",
-            "bp_top_confirm",
             "click_on_side"
         ],
         "post_wait_freezes": 2000
