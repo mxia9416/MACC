@@ -143,10 +143,6 @@
             472
         ],
         "next": [
-            "collect_emotion_rewards25",
-            "collect_emotion_rewards8",
-            "collect_emotion_rewards15",
-            "collect_emotion_rewards2",
             "click_on_side"
         ]
     },

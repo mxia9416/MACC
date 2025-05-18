@@ -5,7 +5,7 @@
     },
     "task": [
         {
-            "name": "每日/密令奖励",
+            "name": "好友点数",
             "option": []
         }
     ],
@@ -18,7 +18,7 @@
                     "enable": true,
                     "index": 0,
                     "path": "E:/leidian/LDPlayer9",
-                    "pid": 52156
+                    "pid": 54412
                 }
             }
         }
