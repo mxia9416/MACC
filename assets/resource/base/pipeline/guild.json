@@ -27,8 +27,8 @@
         ]
     },
     "donate_tab": {
-        "recognition": "OCR",
-        "expected": "捐赠",
+        "recognition": "TemplateMatch",
+        "template": "donate__803_571_105_67__753_521_205_167.png",
         "roi": [
             670,
             539,

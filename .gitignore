@@ -434,6 +434,7 @@ FodyWeavers.xsd
 .idea/
 *.sln.iml
 
+assets/python
 enc_temp_folder/*
 
 # Nuke
